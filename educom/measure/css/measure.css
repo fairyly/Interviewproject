@@ -1,0 +1,20 @@
+.g-secMes{height:640px;overflow:hidden;}
+.g-secMes .hd{height:112px;line-height:112px;text-align:center;font-size:34px;color:#fff;margin:40px 0 16px;background:url(../images/bg-tt1.png) no-repeat center top;}
+.g-secMes2 .hd{background:url(../images/bg-tt2.png) no-repeat center top;}
+.g-secMes3 .hd{background:url(../images/bg-tt3.png) no-repeat center top;}
+.g-secMes4 .hd{background:url(../images/bg-tt4.png) no-repeat center top;}
+.g-secMes5 .hd{background:url(../images/bg-tt5.png) no-repeat center top;}
+.g-measure .g-secMes .wrap{}
+.g-measure .g-secMes .bd{}
+.g-secMesAround .bd .m-pic{float:left;width:40%;}
+.g-secMesAround .bd .m-txt{float:right;width:50%;}
+.g-secMesAround .bd .m-txt ul{margin-top:168px;}
+.g-secMesAround .bd .m-txt ul li{color:#fff;font-size:22px;padding-left:25px;margin:30px 0;background:url(../images/i-circle.png) no-repeat left center;}
+.g-secMes1{background:#75cfea url(../images/bg-sec1.png) no-repeat center bottom;}
+.g-secMes2{background:#ff6566 url(../images/bg-sec2.png) no-repeat center bottom;}
+.g-secMes3{background:#016093 url(../images/bg-sec3.png) no-repeat center bottom;}
+.g-secMes4{background:#bdc3c7;}
+.g-secMes5{background:#7ad4be url(../images/bg-sec5.png) no-repeat center bottom;}
+.g-secMesList .listPic{margin-top:78px;}
+.g-secMesList .listPic li{float:left;width:25%;box-sizing:border-box;padding:0 38px;text-align:center;}
+.g-secMesList .listPic li p{color:#fff;font-size:20px;margin-top:36px;line-height:1.6em;}

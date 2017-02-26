@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>全国员工诚信服务平台</title>
+		<meta http-equiv="Content-Language" content="zh-cn">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="keywords" content="全国员工诚信服务平台">
+		<meta name="description" content="全国员工诚信服务平台">
+		<meta name="author" content="全国员工诚信服务平台">
+		<meta name="Copyright" Content="本页版权归网址所有全国员工诚信服务平台。All Rights Reserved">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript">
+	      $(function(){
+	        $.get('footer.html').done(function(data){$('#footer').html(data)});
+	      })
+	    </script>
+	</head>
+	<body class="ff">
+	<!-- 头部开始 -->
+
+	<div id="header">
+		<div class="header-top">
+			<div class="wrapbox clearfix">
+				<div class="fr">
+					<i class="icon-call mr10"></i>
+					服务热线：<span>400-123-4567</span>
+				</div>
+			</div>
+		</div>
+		<div class="wrapbox">
+			<div class="nav-box clearfix">
+				<div class="logo fl">
+					<h1>全国员工服务平台</h1>
+					<a href="index.html"><img src="img/logo.png" alt="全国员工服务平台" /></a>
+				</div>
+				<div class="login-nav fr">
+					<a href="javascript:void(0)"><i class="icon-exit mr10"></i>退出</a>
+				</div>
+				<div class="nav-list fr">
+					<ul class="clearfix">
+						<li><a href="javascript:void(0)"><i class="icon-index mr10"></i>欢迎您，张三</a></li>
+						<li><a href="search.html">查询征信</a></li>
+						<li><a href="javascript:void(0)">记录征信</a></li>
+						<li><a href="user_info.html">用户中心</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 头部结束 -->
+	<!-- 中部内容开始 -->
+	<div class="main clearfix">
+		<div class="left-menu fl">
+			<ul>
+				<li class="cur"><a href="javascript:void(0)"><i class="icon-jl"></i>新增记录</a></li>
+				<li><a href="javascript:void(0)"><i class="icon-history"></i>历史记录</a></li>
+			</ul>
+		</div>
+		<div class="container mt30">
+			<div class="main-top-nav">
+				<dl>
+					<dd>返回</dd>
+					<dd>&gt;</dd>
+					<dd class="cur">基本信息</dd>
+				</dl>
+			</div>
+			<div class="info-box clearfix mt30">
+				<div class="edit-box">
+					<ul>
+						<li>
+							<label class="labelTh" for="name">姓名：</label>
+							<input type="text" id="name"/>
+							<span class="ps">*<span>(必填)</span></span>
+						</li>
+						<li>
+							<label for="men" class="labelTh">性别：</label>
+							<div class="sex-box">
+								<label for="men"><input type="radio" name="sex" id="men" />男</label>
+								<label for="women"><input type="radio" name="sex" id="women" />女</label>
+							</div>
+							<span class="ps">*<span>(必填)</span></span>
+						</li>
+						<li>
+							<label class="labelTh" for="phone">电话：</label>
+							<input type="text" id="phone"/>
+							<span class="ps">*<span>(必填)</span></span>
+						</li>
+						<li>
+							<label class="labelTh" for="sfz">身份证号：</label>
+							<input type="text" id="sfz"/>
+						</li>
+						<li>
+							<label class="labelTh" for="hzbh">护照编号：</label>
+							<input type="text" id="hzbh" />
+						</li>
+						<li>
+							<label class="labelTh" for="xl">学历：</label>
+							<select name="" id="xl">
+								<option value="小学">小学</option>
+								<option value="初中">初中</option>
+								<option value="高中">高中</option>
+								<option value="大专">大专</option>
+								<option value="本科">本科</option>
+							</select>
+						</li>
+						<li>
+							<label class="labelTh" for="byyx">毕业院校：</label>
+							<input type="text" id="byyx"/>
+						</li>
+						<li>
+							<label class="labelTh" for="xz">薪资：</label>
+							<input type="text" id="xz"/>
+						</li>
+						<li>
+							<label class="labelTh" for="zw">职位：</label>
+							<input type="text" id="zw"/>
+						</li>
+						<li>
+							<label class="labelTh" for="time">最后更新时间：</label>
+							<input type="text" id="time"/>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-top-nav mt30">
+				<dl>
+					<dd>返回</dd>
+					<dd>&gt;</dd>
+					<dd class="cur">诚信记录</dd>
+				</dl>
+			</div>
+			<div class="info-box clearfix mt30">
+				<div class="edit-box">
+					<ul>
+						<li class="unmb">
+							<label class="labelTh">企业评价：</label>
+							<div class="evaluate-box">
+								<p>如果该人才再次应聘，企业是否聘用</p>
+								<div class="radio-box">
+									<label ><input type="radio" name="evaluate"/>欢迎</label>
+									<label ><input type="radio" name="evaluate"/>非常欢迎</label>
+									<label ><input type="radio" name="evaluate"/>考虑一下</label>
+									<label ><input type="radio" name="evaluate"/>拒绝</label>
+									<label ><input type="radio" name="evaluate"/>坚持拒绝</label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<label class="labelTh">事件类别：</label>
+							<div class="event-tab">
+								<div class="tab-title">
+									<ul>
+										<li class="cur">简历情况</li>
+										<li>管理能力</li>
+										<li>工作态度</li>
+										<li>离职纠纷</li>
+									</ul>
+								</div>
+								<div class="tab-box">
+									<ul>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">切状学历</a></li>
+										<li><a href="javascript:void(0)">伪造证书</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+									</ul>
+								</div>
+								<div class="tab-box dn">
+									<ul>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">切状学历</a></li>
+										<li><a href="javascript:void(0)">伪造证书</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+									</ul>
+								</div>
+								<div class="tab-box dn">
+									<ul>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">切状学历</a></li>
+										<li><a href="javascript:void(0)">伪造证书</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+									</ul>
+								</div>
+								<div class="tab-box dn">
+									<ul>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">切状学历</a></li>
+										<li><a href="javascript:void(0)">伪造证书</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+										<li><a href="javascript:void(0)">简历糟蹋</a></li>
+									</ul>
+								</div>
+								<div class="add-event">
+									<p>没有合适的标签？动动手指吧</p>
+									<div class="add-box">
+										<input type="text"  value=""  readonly="readonly"/>
+										<a href="javascript:void(0)" class="add-btn">添加</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<label class="labelTh">时间：</label>
+							<div class="date-box">
+								<select name="" id=""></select>
+								<select name="" id=""></select>
+								<select name="" id=""></select>
+							</div>
+						</li>
+						<li>
+							<label class="labelTh" for="jtms">具体描述：</label>
+							<textarea id="jtms"></textarea>
+						</li>
+						<li>
+							<label class="labelTh" for="bczl">补充资料：</label><input type="text" id="bczl" readonly="readonly" />
+							<a href="javascript:void(0)" class="file-btn">上传<input type="file" /></a>
+							<a href="javascript:void(0)" class="files-btn">批量上传<input type="file" /></a>
+						</li>
+						<li><label class="labelTh" for="zmr">证明人：</label><input type="text" id="zmr"/></li>
+						<li><label class="labelTh" for="zmrdh">证明人电话：</label><input type="text" id="zmrdh"/></li>
+						<li><a href="javascript:void(0)" class="flow-btn collect fl">确认发布</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 中部内容结束 -->
+	
+	<!-- 底部开始 -->
+	<div id="footer">
+		
+	</div>
+	<!-- 底部结束 -->
+	<script type="text/javascript" src="js/fadeBanner.js" ></script>
+	<script type="text/javascript" src="js/base.js" ></script>
+	</body>
+</html>

@@ -1,0 +1,132 @@
+<!-- 网站头部logo，导行菜单下拉菜单 -->
+<!DOCTYPE html>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
+ <style type="text/css">
+ #mainbox{
+ 	border: 1px solid red;
+ 	width: 960px;
+ 	height: 1000px;
+ 	margin:0px auto;
+ }
+ body{background: url(img/bg.jpg);}
+ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding: 0;margin:0;}
+ a{text-decoration: none;}
+ #logo{
+ 	height: 95px;
+ 	line-height: 95px;
+ }
+ .logo1{
+ 	float: left;
+ 	width: 120px;
+ 	position:absolute;
+ 	top: 35px;
+ 	left: 10px;
+ }
+ .logofont{
+ 	position:absolute;bottom: 0px;left: 129px;
+ }
+ .logospan{
+ 	font-size:20px;font-weight: bold;font-family: "黑体";float:left ;width: 300px;height: 60px;
+ }
+#nav{
+	background-image: url(img/nav.jpg);
+	background-repeat: repeat-x;
+	 line-height:44px;
+}
+#nav ul{
+	list-style: none;
+}
+ #nav ul li{
+ 	display:inline-block;
+ 	 background-image: url(img/li.jpg); 
+ 	 background-repeat: no-repeat;
+	background-position: center right; 
+	/*border-right: 1px solid gray;*/
+    width: 80px;
+    text-align: center;
+    line-height: 43px;
+    font-weight: bold;
+ }
+
+ #nav1{}
+ #nav1 ul li{
+ 	list-style: none;
+ 	width: 80px;
+ 	background-color: gray;
+ 	text-align: center;
+ 	border: 1px solid #960;
+ 	line-height: 30px;
+ }
+ </style>
+ <script type="text/javascript">
+    function show(id){
+    	var obj=document.getElementById(id);
+    	obj.style.display="";
+    }
+     function hidde(id){
+    	var obj=document.getElementById(id);
+    	obj.style.display="none";
+    }
+ </script>
+</head>
+
+<body>
+	<div id="mainbox">
+		<!--页头部分-->
+		<div id="topbox">
+			<!--logo部分-->
+			<div id="logo" style="position:relative">
+				<div class="logo1"><img src="img/logo.png" width="120px" height="60px"></div>
+				<div class="logofont"><span class="logospan">某某某科技公司</span></div>
+				<div style="position:absolute;top: 35px;right:10px"><img src="img/tel.jpg"></div>
+			</div>
+			<!--导航菜单部分-->
+
+			<div id="mainmenu" style="position:relative">
+				<div id="nav">
+				<ul>
+					<li onmouseover="show('nav1')" onmouseout="hidde('nav1')"><a href="">首页</a></li>
+					<li onmouseover="show('nav1')" onmouseout="hidde('nav1')"><a href="">关于我们</a></li>
+					<li onmouseover="show('nav1')" onmouseout="hidde('nav1')"><a href="">新闻资讯</a></li>
+					<li onmouseover="show('nav1')" onmouseout="hidde('nav1')"><a href="">产品介绍</a></li>
+					<li><a href="">解决方案</a></li>
+					<li><a href="">体验中心</a></li>
+					<li><a href="">成功案例</a></li>
+					<li><a href="">加盟合作</a></li>
+					<li><a href="">联系我们</a></li>
+				</ul>
+				</div>
+				<div id="nav1" onmouseover="show('nav1')" onmouseout="hidde('nav1')"style="position:absolute;top:44px;left:173px;display:none">
+					<ul>
+						<li><a href="">公司新闻</a></li>
+						<li><a href="">行业新闻</a></li>
+						<li><a href="">全国新闻</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--页中部分-->
+		<div id="middlebox">
+			<!--页中上部分-->
+		     <div id="midtop">
+		     	<div></div>
+		     	<div></div>
+		     	<div></div>
+		     </div>
+		     <!--页中底部分-->
+		     <div id="midbottom"></div>
+		</div>
+
+		<!--页底部分-->
+		<div id="bottombox"></div>
+	</div>
+</body>
+</html>

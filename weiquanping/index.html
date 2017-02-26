@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>自己做swiper微场景</title>
+ 	<link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <style type="text/css">
+	     html, body {
+	        position: relative;
+	        height: 100%;
+	    }
+	    body {
+	        background: #eee;
+	        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	        font-size: 14px;
+	        color:#000;
+	        margin: 0;
+	        padding: 0;
+	    }
+	    .swiper-container {
+		   width: 100%;
+			height: 100%;
+		}
+		.swiper-slide{
+			/*width: 100%;
+			height: 100%;*/
+			text-align: center;
+		}
+		.slide-1{
+			background: url(images/1.jpg);
+			background-size: 100% 100%;
+		}
+		.slide-2{
+			background: url(images/2.jpg);
+			background-size: 100% 100%;
+		}
+		.slide-3{
+			background: url(images/3.jpg);
+			background-size: 100% 100%;
+		}
+		.slide-4{
+			background: url(images/4.jpg);
+			background-size: 100% 100%;
+		}
+		.slide-5{
+			background: url(images/5.jpg);
+			background-size: 100% 100%;
+		}
+		#array{
+			position:absolute;z-index:999;
+			-webkit-animation: start 1.5s infinite ease-in-out;
+			/*animation: start 1.5s infinite ease-in-out;*/
+		}
+		@keyframes start{
+			from {bottom:20px}
+			to {bottom:10px}
+		}
+		@-webkit-keyframes start{
+			from {bottom:20px}
+			to {bottom:10px}
+		}
+	
+		.img_1 {
+			height:auto;width:248px;
+			position:absolute;
+			left:50%;
+			top:1%;
+			margin-left:-124px;
+		}
+		.img_2 {
+		    height: auto;
+		    width: 185px;
+		    position: absolute;
+		    left: 50%;
+		    top: 62%;
+		    margin-left: -92px;
+		}
+		.btn_music{
+			width: 35px;
+		    height: 35px;
+		    background: url('images/play.png') no-repeat center center;
+		    background-size: 100% auto;
+		    position: absolute;
+		    z-index: 100;
+		    right: 15px;
+		    top: 20px;
+		}
+		.btn_musicplay{
+			width: 35px;
+		    height: 35px;
+		    background: url('images/stop.png') no-repeat center center;
+		    background-size: 100% auto;
+		    position: absolute;
+		    z-index: 100;
+		    right: 15px;
+		    top: 20px;
+		}
+    </style>
+</head>
+<body>
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide slide-1">
+	        	<p class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s"></p>
+	        	<img class="img_1 ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.8s" swiper-animate-delay="0.8s" src="images/cover.png">
+	        	<img class="img_2 ani" swiper-animate-effect="zoomInUp" swiper-animate-duration="0.8s" swiper-animate-delay="1s"src="images/wording_cover.png">
+	        </div>
+
+	        <div class="swiper-slide slide-2">
+	        	
+	        		<!-- 嵌套swiper左右滑动 -->
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide"><img class="img_21 ani" style="width: 171px;margin-top:10px" src="images/wording.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+							<img class="img_22 ani" style="width: 245px;" src="images/circle.png" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+							<img class="img_23 ani" style="width: 243px;position: absolute;left: 50%;top: 28%;margin-left: -120px;" src="images/people.png" swiper-animate-effect="zoomInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+							<!-- <img class="img_24 pt-page-scaleUp" style="width: 158px;" src="images/dot1.png">-->
+							<img class="img_25 ani" style="width: 120px;position: absolute;left: 50%;top: 86%;margin-left: -61px;"src="images/check_develop.png" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"> 
+							<img class="img_27 ani" style="width: 248px;position: absolute;left: 50%; top: 0;margin-left: -110px;" src="images/floating_develop.png" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+						</div>
+				        <div class="swiper-slide">
+				        	<img class="img_221 ani" style="width: 293px;position: absolute;left: 50%;top: 1%;margin-left: -146px;" src="images/introduction.png" swiper-animate-effect="shake" swiper-animate-duration="1.5s" swiper-animate-delay="1.8s">
+				        	<img class="img_222 ani" style="width: 246px;position: absolute;left: 50%;top: 76%;margin-left: -123px;" src="images/btn_develop.png" swiper-animate-effect="slideInRight" swiper-animate-duration="1.5s" swiper-animate-delay="1.8s">
+				        </div>
+				        <!-- <div class="swiper-pagination"></div> -->
+					</div>
+	        	
+	        </div>
+	        <div class="swiper-slide slide-3">
+	        
+	        	<div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<img class="img_31 ani" style="width: 166px;position: absolute;left: 50%;top: 2%; margin-left: -86px;z-index: 2;" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s" src="images/wording_design.png">
+			        	<img class="img_32 ani" style="width: 250px;position: absolute;left: 50%;top: 30%;margin-left: -125px;" src="images/circle-design.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+			        	<img class="img_33 ani" style="width: 172px;position: absolute;left: 50%;top: 28%;margin-left: -55px;" src="images/people_design.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+			        	<img class="img_35 ani" style="width: 120px;position: absolute;left: 50%;top: 86%;margin-left: -61px;"src="images/check_develop.png" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"> 
+						<img class="img_37 ani" style="width: 248px;position: absolute;left: 50%; top: 0;margin-left: -110px;" src="images/floating_develop.png" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+						<!-- <img class="img_36 " src="images/icon_up.png" style="width: 25px;position: absolute;left: 50%; top: 92%; margin-left: -12px;webkit-animation: moveIconUp ease 1.5s both infinite;animation: moveToBottom ease 1.5s both infinite;"> -->
+			        </div>
+			        <div class="swiper-slide">
+			        	<img class="img_331 ani" src="images/introduction_design.png" style="width:296px;position: absolute;left: 50%;top: 5%;margin-left: -148px;" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+			        	<img class="img_332 ani" src="images/btn_design.png" style="width: 260px;position: absolute;left: 50%;top: 75%; margin-left: -130px;" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+			        </div>
+			        
+			    </div>
+	        </div>
+
+	        <div class="swiper-slide slide-4">
+	        
+	        	<div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<img class="img_41 ani" src="images/wording_production.png" style="width: 162px; position: absolute;left: 50%; top: 2%; margin-left: -84px;z-index: 2;" swiper-animate-effect="zoomInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+						<img class="img_42 ani" src="images/circle-production.png" style="width: 230px;position:absolute;left: 50%;top:28%;margin-left:-115px;" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+						<img class="img_43 ani" src="images/people_production.png" style="width: 161px;position:absolute;left: 50%;top: 28%;margin-left: -80px;" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+						
+						<img class="img_45 ani" src="images/check_production.png"  style="width: 142px;position: absolute;left: 50%;top: 82%;margin-left: -71px;" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+						<!-- <img class="img_46 ani" src="images/icon_up.png" style="width: 25px;position: absolute;left: 50%;top: 92%;margin-left: -12px;" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"> -->
+						<img class="img_47 ani" src="images/floating_production.png" style="width: 271px;position: absolute;left: 50%;top: 33%;margin-left: -135px;" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+						<img class="img_48 ani" src="images/pic_shadow_production.png" style="width: 169px;position: absolute;left: 50%;top: 75%;margin-left: -84px;" swiper-animate-effect="slideInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+			        </div>
+			        <div class="swiper-slide">
+			        	<img class="img_441 ani" src="images/introduction_production.png" style="width: 298px;position: absolute;left: 50%;top: 5%;margin-left: -149px;" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+						<img class="img_442 ani" src="images/btn_production.png" style="width: 260px;position: absolute;left: 50%;top: 75%;margin-left: -130px;" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+			        </div>
+			        
+			    </div>
+	        </div>
+
+            <div class="swiper-slide slide-5">
+			        <img class="img_1 ani" src="images/pic_back.png" style="width:280px;position: absolute;left: 50%;top: 20%;margin-left: -140px;" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+					<img class="img_2 ani" src="images/btn_join.png" style="width:260px;position: absolute;left: 50%;top: 67%;margin-left: -130px;" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">	
+	        </div>
+
+	    </div>
+	    <img src="images/arrow.png" style="width: 20px; height: 15px;bottom:10px;left:145px;" id="array" class="resize" >
+        <span id="playbox" ></span>
+        <audio id="mp3" loop="true" src="images/4.mp3"></audio>
+	    <!-- 如果需要分页器 -->
+	    <!-- <div class="swiper-pagination"></div> -->
+	    
+	    <!-- 如果需要导航按钮 -->
+	    <!-- <div class="swiper-button-prev"></div>
+	    <div class="swiper-button-next"></div> -->
+	    
+	    <!-- 如果需要滚动条 -->
+	    <!-- <div class="swiper-scrollbar"></div> -->
+	</div>
+</body>
+<script type="text/javascript">
+	$(function(){
+        $("#playbox").addClass("btn_music");
+        $("#playbox").click(function(){
+        	if ($("#playbox").hasClass("btn_music")) {
+        		var mp3=$("#mp3");
+        		console.log(mp3);
+        		$("#mp3")[0].play();
+        		$("#playbox").addClass("btn_musicplay").removeClass("btn_music");
+        	}else{
+        		$("#mp3")[0].pause();
+        		$("#playbox").addClass("btn_music").removeClass("btn_musicplay");
+        	}
+        });
+	});
+</script>
+	 <script> 
+		var mySwiper2 = new Swiper('.slide-2',{
+			direction : 'horizontal',
+			// pagination: '.swiper-pagination',
+			// effect : 'flip',
+		});
+		var mySwiper3 = new Swiper('.slide-3',{
+			direction : 'horizontal',
+			// pagination: '.swiper-pagination',
+			// effect : 'flip',
+		})
+		var mySwiper4 = new Swiper('.slide-4',{
+			direction : 'horizontal',
+			// pagination: '.swiper-pagination',
+			// effect : 'flip',
+		})
+	  
+			scaleW=window.innerWidth/320;
+			scaleH=window.innerHeight/480;
+			var resizes = document.querySelectorAll('.resize');
+			          for (var j=0; j<resizes.length; j++) {
+			           resizes[j].style.width=parseInt(resizes[j].style.width)*scaleW+'px';
+					   resizes[j].style.height=parseInt(resizes[j].style.height)*scaleH+'px';
+					   resizes[j].style.top=parseInt(resizes[j].style.top)*scaleH+'px';
+					   resizes[j].style.left=parseInt(resizes[j].style.left)*scaleW+'px'; 
+			          }  //设置
+
+
+		  var mySwiper = new Swiper ('.swiper-container', {
+			  direction: 'vertical',
+			  effect : 'fade',//切换效果cube，coverflow。，flip
+			  onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+			    swiperAnimateCache(swiper); //隐藏动画元素 
+			    swiperAnimate(swiper); //初始化完成开始动画
+			  }, 
+			  onSlideChangeEnd: function(swiper){ 
+			    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+			  } 
+		  })        
+	</script>
+</html>

@@ -1,0 +1,49 @@
+.sprite {
+ background: url(../img/mySprite.png);
+}
+.monster {
+ height: 128px;
+}
+.application {
+ height: 61px;
+}/* Monsters */
+.doctor {
+ width: 103px;
+ background-position: -2px -2px;
+}
+.octopus {
+ width: 89px;
+ background-position: -106px -2px;
+}
+.wolf {
+ width: 115px;
+ background-position: -196px -2px;
+}
+.star {
+ width: 126px;
+ background-position: -312px -2px;
+}
+.dog {
+ width: 128px;
+ background-position: -439px -2px;
+}/* Applications -*/
+.css {
+ width: 61px;
+ background-position: -2px -133px;
+}
+.activityMonitor {
+ width: 58px;
+ background-position: -64px -133px;
+}
+.dashboard {
+ width: 51px;
+ background-position: -123px -133px;
+}
+.quicktime {
+ width: 53px;
+ background-position: -175px -133px;
+}
+.scanner {
+ width: 74px;
+ background-position: -229px -133px;
+}

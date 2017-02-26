@@ -1,0 +1,19 @@
+#newslist{}
+#newslist ul li{
+	line-height: 30px; 
+	border-bottom: 1px dotted #666;
+	font-size: 12px;
+	color: #666;
+	position:relative;
+}
+#newslist ul li a{
+	color: #666;
+}
+#newslist ul li a:hover{
+	text-decoration: underline;
+}
+#newslist ul li span{
+	position:absolute;
+	top: 2px;
+	right: 5px;
+}

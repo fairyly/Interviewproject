@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>登陆</title>
+    <link rel="stylesheet" href="public/css/base.css">
+    <link rel="stylesheet" href="login/css/login.css" />
+</head>
+
+<body>
+    <div class="site-nav">
+        <div class="wrap">
+            <a href="index.html"><h1 class="logo">汇成教育</h1></a>
+            <div class="navMod">
+                <ul class="g-menu">
+                    <li class="cur"><a href="javascript:;">首页</a></<li></li>
+                    <li><a href="javascript:;">个人中心</a></li>
+                    <li><a href="javascript:;">测评</a></li>
+                    <li>
+                        <div class="menuTool">
+                            <a href="javascript:;">职业规划</a>
+                            <div class="toggleCnt">
+                                <ul>
+                                    <li><a href="javascript:;">未来职业</a></li>
+                                    <li><a href="javascript:;">名师指导</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="g-mainSearch">
+                    <input type="text" placeholder="搜索你感兴趣的学校、专业">
+                </div>
+                <div class="g-topLink">
+                    <a class="login" href="javascript:;">登录</a>
+                    <i>|</i>
+                    <a class="regist" href="javascript:;">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="g-login">
+            <div class="wrap">
+                <form id="signupForm" method="post" action="index.html" class="zcform">
+                    <div class="m-loginBox">
+                        <h2>用户登录</h2>
+                        <p class="txt-error">用户名或密码错误！</p>
+                        <div class="iptBox">
+                            <i class="i-user"></i>
+                            <input class="J-ipt ipt-txt phone" name="telphone" type="text" placeholder="请输入手机号">
+                        </div>
+                        <div class="iptBox">
+                            <i class="i-psw"></i>
+                            <input class="J-ipt ipt-txt psw" name="password" type="password" placeholder="请输入密码">
+                        </div>
+                        <div class="u-remPsw">
+                            <label>
+                                <input type="checkbox">记住密码</label>
+                            <a class="forPsw" href="resetPsw.html">忘记密码？</a>
+                        </div>
+                        <input class="btn-default" type="submit" value="登录">
+                        <a href="regist.html" class="link-regist">没有账号，去注册</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <div class="ftMsg">
+                <p class="cntMsg">
+                    <span><i class="i-telFt"></i>客服电话：010-888-8888&nbsp;&nbsp;400-888-8888</span>
+                    <span class="adress">公司地址：北京市海淀区交大东路616号1-808室</span>
+                </p>
+                <p class="copyright">
+                    Copyright（C）2009 ouhuiJY.com | All rights reserved 京ICP备88866688号 版权所有：北京汇成教育股份有限公司
+                </p>
+            </div>
+            <div class="contact">
+                <div class="m-qq mod" href="javascript:;">
+                    <i class="i-qq"></i>
+                    <div class="qqMsg ctBlock">
+                        <h4>官方QQ群</h4>
+                        <p>群5：475953451</p>
+                        <p>群6：143032683（浙江）</p>
+                    </div>
+                </div>
+                <div class="m-wx mod" href="javascript:;">
+                    <i class="i-wx"></i>
+                    <div class="wxMsg ctBlock">
+                        <h4>微信客服</h4>
+                        <p>请扫描二维码</p>
+                        <img src="public/images/img-wx.png" alt="">
+                    </div>
+                </div>
+                <div class="m-wb mod" href="javascript:;">
+                    <i class="i-wb"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="public/js/jquery-1.8.3.min.js"></script>
+    <script src="login/js/login.js"></script>
+    <script type="text/javascript" src="login/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="login/js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="login/js/resgin.js"></script>
+</body>
+
+</html>

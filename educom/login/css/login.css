@@ -1,0 +1,75 @@
+/*登陆*/
+.mainContent{position:relative;}
+input::-ms-clear,input::-ms-reveal{display:none;}
+.g-login,.g-regist{height:640px;background:url(../images/bg-login.png) no-repeat center top;}
+.m-loginBox,.m-registBox{position:relative;float:right;width:410px;height:600px;margin-top:20px;padding:0 55px;box-sizing:border-box;background:#d3e8fd;background:rgba(250,250,250,.4);}
+.m-loginBox h2{color:#f88a05;font-size:22px;text-align:center;margin:52px 0 54px;}
+.m-loginBox .iptBox{position:relative;margin-top:30px;border:1px solid transparent;}
+.m-loginBox .iptBox.active{border:1px solid #f88a05;}
+.m-loginBox .iptBoxCode .modCode{display:block;float:left;width:66.66%;}
+.m-loginBox .iptBoxCode .modCode.active{padding:1px;background-color:#f88a05;}
+.m-loginBox .iptBoxCode .modCode.active i{top:1px;left:1px;}
+.m-loginBox .iptBox{height:44px;}
+.m-loginBox .iptBox i{position:absolute;left:0;top:0;display:inline-block;width:48px;height:44px;background:#ececec url(../images/i-user.png) no-repeat center center;}
+.m-loginBox .iptBox i.i-psw{background:#ececec url(../images/i-psw.png) no-repeat center center;}
+.m-loginBox .ipt-txt{width:100%;height:44px;color:#bbb;padding:12px 0 12px 68px;box-sizing:border-box;font-size:14px;background:#fff;}
+.m-loginBox .iptBox label{position:absolute;bottom:50px;left:0;color:#f8051c;font-size:12px;padding-left:20px;background:url(../images/i-warm.png) no-repeat center left;}
+.m-loginBox .u-remPsw{margin-top:26px;color:#f88a05;font-size:14px;}
+.m-loginBox .u-remPsw input{position:relative;margin-right:18px;}
+.m-loginBox .read{color:#666;}
+.m-loginBox .u-remPsw input:after{position:absolute;content:'';top:50%;left:0;margin-top:-11px;width:20px;height:18px;border:1px solid #f88a05;vertical-align:middle;background:#fff;}
+.m-loginBox .u-remPsw input:checked:after{background:#fff url(../images/i-checked.png) no-repeat center center;}
+.m-loginBox .u-remPsw .forPsw{float:right;text-decoration:underline;}
+.btn-default{width:100%;height:42px;color:#fff;font-size:18px;margin-top:46px;background:#f88a05;}
+.link-regist{display:block;color:#999;font-size:16px;margin-top:22px;text-align:center;}
+.txt-error{position:absolute;width:100%;top:88px;left:0;text-align:center;color:#f8051c;margin-top:20px;}
+
+/*注册*/
+.m-registBox .iptBox .i-phone{background:#ececec url(../images/i-phone.png) no-repeat center center;}
+.m-registBox .iptBox .i-code{background:#ececec url(../images/i-code.png) no-repeat center center;}
+.g-regist{overflow:hidden;}
+.m-registBox{position:relative;}
+.m-registBox .iptBoxCode .btn-getCode{display:inline-block;float:right;width:30%;height:44px;line-height:44px;color:#fff;font-size:14px;text-align:center;background:#f88a05;}
+.m-registBox .iptBoxCode .btn-getCode:disabled{background:#ccc;}
+.m-loginBox .u-remPsw label a{color:#0093e8;}
+.m-registBox .iptBox i.i-keyboard{position:absolute;right:0;left:auto;top:0;display:inline-block;width:48px;height:44px;background:url(../images/i-keyboard.png) no-repeat center center;}
+
+/*键盘*/
+#keyboard{position:absolute;left:auto!important;right:430px;opacity:0;top:2000px!important;}
+#keyboard.show{opacity:1;top:256px!important;}
+
+/*协议*/
+.g-agreement{display:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:9999;}
+.g-agreement .mask{position:absolute;width:100%;height:100%;background:#797979;background:rgba(0,0,0,.5);}
+.g-agreement .g-agreeBox{position:relative;width:740px;margin:52px auto;background:#fff;border-top:5px solid #49b4ec;z-index:999;}
+.g-agreement .g-agreeBox .hd{position:relative;height:80px;line-height:80px;font-size:20px;color:#333;text-align:center;}
+.g-agreement .g-agreeBox .hd i.i-close{cursor:pointer;position:absolute;line-height:1em;color:#49b4ec;top:12px;right:16px;font-size:42px;}
+.g-agreement .g-agreeBox .bd{height:364px;color:#666;margin:0 68px;font-size:14px;overflow-y:auto;line-height:1.8em;}
+.g-agreement .g-agreeBox .bd p em{color:#49b4ec;}
+.g-agreement .g-agreeBox .ft{text-align:center;padding:38px 0;}
+.g-agreement .g-agreeBox .ft .btn-agree{color:#fff;font-size:16px;padding:14px 108px;background:#49b4ec;}
+
+/*重置密码*/
+.g-resetPsw h2{font-size:24px;color:#333;padding:58px 0;text-align:center;}
+.g-resetBox{padding-bottom:110px;background:#fff;}
+.g-resetBox .resetHd{padding:50px;}
+.g-resetBox .resetHd ul{overflow:hidden;}
+.g-resetBox .resetHd ul li{float:left;width:20%;text-align:center;}
+.g-resetBox .resetHd ul li.line{height:88px;background:url(../images/bg-line.png) repeat-x left center;}
+.g-resetBox .resetHd ul li.through{background:url(../images/bg-lineThrough.png) repeat-x left center;}
+.g-resetBox .resetHd ul li.step em{display:inline-block;width:50px;height:50px;line-height:50px;color:#fff;font-style:italic;font-size:28px;text-align:left;padding-left:14px;box-sizing:border-box;border-radius:50%;background:#d4d4d4;}
+.g-resetBox .resetHd ul li.step.active em{background:#6abde8;}
+.g-resetBox .resetHd ul li.step p{color:#666;font-size:16px;margin-top:20px;}
+.g-resetBox .resetBd{padding:0 0 0 320px;}
+.g-resetBox .resetBd .iptBox{position:relative;width:500px;margin-top:30px;}
+.g-resetBox .resetBd .iptBox.active .ipt-txt{border:1px solid #f88a05;}
+.g-resetBox .resetBd .iptBox .tt{display:inline-block;width:116px;color:#666;text-align:right;font-size:18px;}
+.g-resetBox .resetBd .iptBox label.error{position:absolute;width:320px;left:510px;color:#f8051c;font-size:14px;line-height:44px;padding-left:20px;background:url(../images/i-warm.png) no-repeat center left;}
+.g-resetBox .resetBd .iptBox .ipt-txt{width:380px;height:44px;box-sizing:border-box;padding:12px 20px;color:#bbb;font-size:14px;border:1px solid #49b4ec;}
+.g-resetBox .resetBd .iptBox .ipt-txt.code{width:240px;}
+.g-resetBox .resetBd .iptBoxCode .btn-getCode{float:right;width:120px;height:44px;color:#fff;font-size:14px;background:#49b4ec;}
+.g-resetBox .resetBd .iptBoxCode .btn-getCode:disabled{background:#ccc;}
+.g-resetBox .resetBd .btn-default{width:380px;height:44px;color:#fff;font-size:18px;margin-left:120px;background:#49b4ec;}
+.g-resetBox .u-txtSucc{color:#49b4ec;font-size:26px;margin-top:36px;text-align:center;}
+.g-resetBox .u-countLogin{margin-top:58px;font-size:16px;text-align:center;}
+.g-resetBox .u-countLogin em{color:#f98a05;}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>门户网站---新闻列表页</title>
+   
+
+<style type="text/css" media="screen">
+/*第一种*/
+#pagination-digg li { border:0; margin:0; padding:0; font-size:11px; list-style:none; /* savers */ float:left; }
+#pagination-digg a { border:solid 1px #9aafe5; margin-right:2px; }
+#pagination-digg .previous-off,#pagination-digg .next-off  { border:solid 1px #DEDEDE; color:#888888; 
+display:block; float:left; font-weight:bold; margin-right:2px; padding:3px 4px; }
+#pagination-digg .next a,#pagination-digg .previous a { font-weight:bold; }
+#pagination-digg .active { background:#2e6ab1; color:#FFFFFF; font-weight:bold; display:block; float:left; 
+padding:4px 6px; /* savers */ margin-right:2px; }
+#pagination-digg a:link,#pagination-digg a:visited { color:#0e509e; display:block; float:left; padding:3px 6px; 
+text-decoration:none; }
+#pagination-digg a:hover { border:solid 1px #0e509e; }
+body { font-family:Arial, Helvetica, sans-serif; font-size:12px; }
+h2{ clear:both; border:0; margin:0; padding-top:30px; font-size:13px; }
+p{ border:0; margin:0; padding:0; padding-bottom:20px; }
+ul{ border:0; margin:0; padding:0; }
+
+
+/*第二种*/
+  
+.pages{ width:100.5%; text-align:right; padding:10px 0; clear:both;}
+.pages span,.pages a,.pages b{ font-size:12px; font-family:Arial, Helvetica, 
+
+sans-serif; margin:0 2px;}
+.pages span font{ color:#f00; font-size:12px;}
+.pages a,.pages b{ border:1px solid #5FA623; background:#fff; padding:2px 
+
+6px; text-decoration:none}
+.pages span { padding-right:10px }
+.pages b,.pages a:hover{ background:#7AB63F; color:#fff;}
+ 
+
+ /*第三种*/
+ #page{margin:5px; padding-bottom:20px; padding-top:20px;} 
+#page a{border:1px solid #003399;padding:5px;margin:2px;background-color:#FFFFFF;color:#003300;height:18px; } 
+#page a:hover{font-size:14px; color:#FFFFFF; background-color:#003399;padding:5px;margin:2px;height:20px;}
+
+
+</style>
+</head>
+<body>
+
+  <!-- 一种样式 -->
+  <ul id="pagination-digg">
+    <li class="previous-off">&laquo;Previous</li>
+      <li class="active">1</li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">4</a></li>
+      <li><a href="">5</a></li>
+      <li><a href="">6</a></li>
+      <li><a href="">7</a></li>
+      <li class="next"><a href="">Next &raquo;</a></li>
+  </ul>
+
+  <!-- 二种样式 -->
+
+<div class="pages"><span>共<font>1678</font>条评论</span><b>1</b><a 
+
+href="">2</a><a href="">3</a><a href="">4</a><a href="">5</a>...<a 
+
+href="">168</a><a href="">下一页>></a></div>
+
+<!-- 第三种 -->
+<div id=page>记录条 共4页 每页20条 <a href=?id=74&page=1> 
+<img src="/boke/blog/Pic/first.gif" border=0 alt='第一页'></a> 
+<a href=?id=74&page=1 class='sf'>1</a> 
+<a href=?id=74&page=2 class='sf'>2</a> 
+<a href=?id=74&page=3 class='sf'>3</a> 
+<a href=?id=74&page=4 class='sf'>4</a> 
+<a href=?id=74&page=2><img src="/boke/blog/Pic/next.gif" border=0 alt='下一页' ></a> 
+<a href=?id=74&page=4><img src="/boke/blog/Pic/Last.gif" alt='最后一页' border=0 ></a> 
+</div>
+  </body>
+  </html>

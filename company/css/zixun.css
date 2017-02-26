@@ -1,0 +1,8 @@
+#zixunbox{
+	width: 104px;
+	height: 144px;
+	position: absolute;;
+	top: 200px;
+	right: 15px;
+	z-index: 99;
+}

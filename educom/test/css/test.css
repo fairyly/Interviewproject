@@ -1,0 +1,99 @@
+.mainContent{position:relative;padding-bottom:28px;}
+.g-blockMenu{padding:32px 0;}
+.g-blockMenu ul{text-align:center;}
+.g-blockMenu ul li{display:inline-block;width:280px;height:58px;line-height:58px;text-align:center;margin:0 6px;color:#fff;border-radius:10px;font-size:20px;background:#49b4ec;}
+.g-blockMenu ul li.cur{background:#f88a05;}
+.g-blockMenu ul li a{display:block;}
+.g-blockMenu ul li a i{display:inline-block;width:33px;height:33px;margin-right:8px;vertical-align:middle;background:url(../../public/images/i-eye.png) no-repeat right center;}
+.g-blockMenu ul li a i.i-ident{background:url(../../public/images/i-indent.png) no-repeat right center;}
+.g-blockMenu ul li a i.i-able{background:url(../../public/images/i-able.png) no-repeat right center;}
+.g-blockMenu ul li a i.i-interest{background:url(../../public/images/i-interest.png) no-repeat right center;}
+.g-cntBlock{border:1px solid #e7e6e6;border-bottom:0;background:#fff;}
+.g-cntBlock .hd{position:relative;height:80px;border-bottom:1px solid #e7e6e6;}
+.m-ttPanel{display:none;position:absolute;width:100%;height:calc(100% - 204px);top:204px;left:0;z-index:9999;}
+.m-ttPanel .mask{position:absolute;width:100%;height:100%;background:rgba(0,0,0,.5);}
+.m-ttPanel.active .mask{}
+.m-ttPanel .cnt{position:relative;padding:20px 48px;box-sizing:border-box;border:1px solid #e7e6e6;border-top:0;background:#f2f2f2;}
+.m-ttPanel .tips{color:#666;font-size:16px;}
+.m-ttPanel .curCate{overflow:hidden;margin:26px 0;}
+.m-ttPanel .tips2{color:#333;font-size:14px;}
+.m-ttPanel .curCate li{float:left;width:100px;height:30px;line-height:30px;color:#999;font-size:12px;border-radius:5px;margin:0 5px;text-align:center;box-sizing:border-box;background:#e7e7e7;}
+.m-ttPanel .curCate li.cur{color:#49b4ec;border:1px solid #49b4ec;background:#fff;}
+.m-ttPanel .ttList{overflow:hidden;margin:20px 0;}
+.m-ttPanel .ttList li{float:left;width:50px;height:34px;line-height:34px;text-align:center;color:#999;border:1px solid #dbdbdb;border-radius:5px;font-size:18px;margin:0 5px;box-sizing:border-box;background:#fff;}
+.m-ttPanel .ttList li.read{color:#fff;border:1px solid #49b4ec;background:#49b4ec;}
+.m-ttPanel .ttList li.star{color:#fff;border:0;background:#ffa500 url(../images/i-signStar.png) no-repeat right top;}
+.m-ttPanel .ttList li.cur{color:#49b4ec;border:1px solid #49b4ec;}
+.btn-default{padding:10px 24px;font-size:16px;color:#fff;border-radius:5px;margin:40px 0;background:#49b4ec;}
+.g-cntBlock .hd h2{float:left;color:#333;font-size:20px;padding-left:54px;line-height:80px;}
+.g-cntBlock .hd .subMenu{float:right;}
+.g-cntBlock .hd .subMenu label{float:left;color:#333;font-size:16px;margin-top:30px;}
+.g-cntBlock .hd .subMenu .m-time{float:left;line-height:80px;font-size:18px;color:#49b4ec;}
+.g-cntBlock .hd .subMenu .m-time span{display:inline-block;width:36px;height:40px;line-height:40px;color:#fff;text-align:center;border-radius:5px;font-weight:bold;background:#49b4ec;background:-webkit-linear-gradient(#6dccfd 48%,#fff 4%,#49b4ec 50%);background:-o-linear-gradient(#6dccfd 48%,#fff 4%,#49b4ec 50%);background:-moz-linear-gradient(#6dccfd 48%,#fff 4%,#49b4ec 50%);background:linear-gradient(#6dccfd 48%,#fff 4%,#49b4ec 50%);}
+.g-cntBlock .hd .subMenu .m-time i{font-size:18px;color:#49b4ec;margin:0 6px;}
+.g-cntBlock .hd .subMenu .toggleBlock{float:left;margin:0 15px;}
+.g-cntBlock .hd .subMenu .toggleBlock a.target{display:inline-block;width:140px;height:40px;line-height:40px;font-size:18px;border-radius:5px;text-align:center;color:#fff;margin-top:20px;background:#49b4ec;}
+.g-cntBlock .hd .subMenu .toggleBlock a.target:after{display:inline-block;content:'';width:10px;height:10px;border-width:0 1px 1px 0;border-color:#fff;border-style:solid;margin-left:6px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);-webkit-transition:linear .2s;-o-transition:linear .2s;transition:linear .2s;}
+.g-cntBlock .hd .subMenu .toggleBlock.active a.target:after{-webkit-transform:rotate(-135deg);-ms-transform:rotate(-135deg);-o-transform:rotate(-135deg);transform:rotate(-135deg);}
+.g-cntBlock .bd .subHd{padding:76px 0 32px;margin:0 54px;border-bottom:1px dotted #c6c6c6;overflow:hidden;}
+.g-cntBlock .bd .subHd .page{float:left;margin-right:-200px;color:#686565;font-size:20px;letter-spacing:5px;}
+.g-cntBlock .bd .subHd .page em{color:#49b4ec;font-size:32px;}
+.g-cntBlock .bd .subHd .m-sign{cursor:pointer;float:right;width:112px;height:34px;margin-left:-200px;border-radius:5px;border:2px solid #f1ab56;}
+.g-cntBlock .bd .subHd .m-sign em{display:inline-block;float:right;width:58%;height:34px;line-height:34px;color:#fff;text-align:center;font-size:18px;background:#f1ab56;}
+.g-cntBlock .bd .subHd .m-sign i{float:left;display:inline-block;width:22px;height:21px;margin:6px 12px;background:url(../images/i-star-empty.png) no-repeat left top;}
+.g-cntBlock .bd .subHd .m-sign.active i{background:url(../images/i-star.png) no-repeat left top;}
+.g-cntBlock .bd .subHd h3{float:left;width:72%;text-align:center;color:#4f4e4e;font-size:25px;margin-left: 14%;line-height: 1.5em;}
+.g-cntBlock .bd .mod{}
+.g-cntBlock .bd .mod ul{margin:20px 0;padding-left:500px;}
+.g-cntBlock .bd .mod ul li{font-size:22px;color:#767676;line-height:2.8em;}
+.g-cntBlock .bd .mod ul li input{position:relative;margin-right:16px;vertical-align:2px;}
+.g-cntBlock .bd .mod ul li input:after{position:absolute;content:'';width:24px;height:24px;display:inline-block;left:50%;margin-left:-12px;top:50%;margin-top:-12px;background:url(../images/ipt-radio.png) no-repeat left top;z-index:9;}
+.g-cntBlock .bd .mod ul li input:checked:after{background:url(../images/ipt-radio-checked.png) no-repeat left top;}
+.g-cntBlock .bd .mod ul li input:checked+span{color:#f88a05;}
+.g-cntBlock .bd .mod .btnWrap{text-align:center;padding:66px 0;}
+.g-cntBlock .bd .mod .btnWrap a{display:inline-block;width:180px;height:46px;line-height:46px;text-align:center;color:#fff;margin:0 55px;font-size:18px;background:#49b4ec;border-radius:5px;}
+.g-cntBlock .bd .mod .btnWrap a:first-child{background:#f88a05;}
+
+/* 记忆测试 */
+.menMod{overflow:hidden;}
+.memRule{margin:46px 0 0 0;color:#4f4e4e;font-size:18px;line-height:1.5em;}
+.memRule p{margin-top:4px;}
+.g-mem{position:relative;padding:40px 54px;}
+.g-mem .hdMod{padding-bottom:14px;overflow:hidden;}
+.g-mem h3{display:inline-block;color:#49b4ec;font-size:24px;padding:14px 66px;border-bottom:2px solid #77c7f1;}
+.u-countdown{float:right;width:190px;height:190px;margin-top:16px;margin-right:48px;padding:8px;background:#fff;border-radius:50%;box-sizing:border-box;box-shadow:0 0 20px #dbf0fb;}
+.u-countdown span{display:block;width:174px;height:174px;line-height:174px;text-align:center;border-radius:50%;font-family:Arial;font-size:110px;font-style:italic;color:#91d8fd;text-shadow:0 0 4px #5db8f3;box-shadow:0 0 8px #dff2fd inset;background:#f2faff;}
+.u-countdown span i{font-size:36px;}
+.m-question,.m-answer{margin:30px 0;overflow:hidden;}
+.m-question .cnt{overflow:hidden;}
+.m-question .cnt li{display:none;margin-bottom:10px;}
+.m-question .cnt li.active{display:block;}
+.m-question .cnt li.opacity span em{display:none;}
+.m-question .cnt li span,.m-answer .cnt input{float:left;display:inline-block;width:60px;height:60px;line-height:60px;text-align:center;color:#fff;font-size:24px;margin:0 3px;border:1px solid #78c5ed;background:#78c5ed;box-sizing:border-box;}
+.m-answer .cnt input.hide{display:none;}
+.m-question label,.m-answer label{float:left;display:inline-block;width:100px;height:60px;text-align:center;margin-right:30px;line-height:60px;color:#f88a05;margin-bottom:10px;font-size:20px;background:#f4f4f4;}
+
+/*.m-answer .cnt{overflow:hidden;}*/
+.m-answer .cnt input{color:#78c5ed;background:#fff;outline:0;}
+.btnBox2{text-align:center;padding:100px 0;}
+.btnBox2 input{cursor:pointer;width:180px;height:46px;color:#fff;font-size:18px;border-radius:5px;background:#f88a05;}
+.btnBox2 input:disabled{cursor:default;background:#ccc;}
+.g-layer{display:none;}
+.g-layer,.g-layer .mask{position:fixed;width:100%;height:100%;top:0;left:0;z-index:999;text-align:center;}
+.g-layer .mask{background:#797979;background:rgba(0,0,0,.5);}
+.g-layer img{position:relative;z-index:9999;margin-top:140px;}
+.g-layer.success{display:block;}
+.g-layer.success .btnNext{display:block;}
+.J-question{display:none;}
+.J-question.active{display:block;}
+
+/*眼手协调能力*/
+.m-coord label{float:left;display:inline-block;width:130px;height:60px;text-align:center;margin-right:30px;line-height:60px;color:#f88a05;margin-bottom:10px;font-size:20px;background:#f4f4f4;}
+.m-coord{margin-bottom:80px;overflow:hidden;}
+.m-coord .blockList,.m-coord .blockList li{overflow:hidden;width:665px;}
+.m-coord .blockList li span{float:left;color:#fff;margin:0 3px 50px 3px;}
+.m-coord .blockList li em,.m-coord .blockList li input{display:block;width:60px;height:60px;line-height:60px;text-align:center;border:1px solid #78c5ed;background:#78c5ed;font-size:24px;box-sizing:border-box;}
+.m-coord .blockList li em.cor{color:#666;border:0;margin-top:3px;background:#efefef;}
+.m-coord .blockList li input{border:1px solid #78c5ed;background:#fff;margin-top:3px;}
+.m-coord .blockAsw li{display:none;}
+.m-coord .blockAsw li.active{display:block;}

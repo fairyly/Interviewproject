@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>注册</title>
+    <link rel="stylesheet" href="public/css/base.css">
+    <link rel="stylesheet" href="login/css/login.css" />
+</head>
+
+<body onload="init();">
+    <div class="site-nav">
+        <div class="wrap">
+            <a href="index.html"><h1 class="logo">汇成教育</h1></a>
+            <div class="navMod">
+                <ul class="g-menu">
+                    <li class="cur"><a href="javascript:;">首页</a></<li></li>
+                    <li><a href="javascript:;">个人中心</a></li>
+                    <li><a href="javascript:;">测评</a></li>
+                    <li>
+                        <div class="menuTool">
+                            <a href="javascript:;">职业规划</a>
+                            <div class="toggleCnt">
+                                <ul>
+                                    <li><a href="javascript:;">未来职业</a></li>
+                                    <li><a href="javascript:;">名师指导</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="g-mainSearch">
+                    <input type="text" placeholder="搜索你感兴趣的学校、专业">
+                </div>
+                <div class="g-topLink">
+                    <a class="login" href="javascript:;">登录</a>
+                    <i>|</i>
+                    <a class="regist" href="javascript:;">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="g-login g-regist">
+            <div class="wrap">
+                <form id="signupForm" method="post" action="index.html" class="zcform">
+                    <div class="m-loginBox m-registBox">
+                        <h2>青少年职业倾向测评系统</h2>
+                        <div class="iptBox">
+                            <i class="i-phone"></i>
+                            <input class="J-ipt ipt-txt phone" name="telphone" type="text" placeholder="请输入手机号">
+                        </div>
+                        <div class="iptBox iptBoxCode">
+                            <span class="modCode"><i class="i-code"></i>
+                                <input class="J-ipt ipt-txt phone" name="vcode" type="text" placeholder="请输入验证码"></span>
+                            <input id="J-btnVcode" type="button" class="btn-getCode" href="javascript:;" value="获取验证码">
+                        </div>
+                        <div class="iptBox">
+                            <i class="i-psw"></i>
+                            <input id="password" class="J-ipt ipt-txt psw" name="password" type="password" placeholder="请输入新密码" onkeyup="getCaretPositions(this);" onclick="getCaretPositions(this);">
+                            <i class="J-keyboard i-keyboard"></i>
+                        </div>
+                        <div class="iptBox">
+                            <i class="i-psw"></i>
+                            <input id="confirm_password" class="J-ipt ipt-txt psw {required:true,equalTo:'#password'}" name="confirm_password" type="password" placeholder="请再次输入新密码" onkeyup="getCaretPositions(this);" onclick="getCaretPositions(this);">
+                            <i class="J-keyboard i-keyboard"></i>
+                        </div>
+                        <div class="u-remPsw read">
+                            <label>
+                                <input id="J-agreeTarget" type="checkbox" name="read" checked>阅读并接受<a id="J-read" href="javascript:;">《职业倾向测评用户注册协议》</a></label>
+                        </div>
+                        <input id="J-btnRegist" class="btn-default" type="submit" value="注册">
+                        <a href="login.html" class="link-regist">已有账号，去登录</a>
+                        <div id="keyboard"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="J-agree" class="g-agreement">
+            <div class="mask"></div>
+            <div class="g-agreeBox">
+                <div class="hd">
+                    用户注册协议<i id="J-close" class="i-close">×</i>
+                </div>
+                <div class="bd">
+                    <p>欢迎使用中国青少年职业倾向测评系统。所有用户，只要在职业倾向测评系统注册及发表言论，即被视为已经阅读、理解并同意本协议的以下各项条款：</p>
+                    <p><em>一、总则</em></p>
+                    <p>1.1、用户应当同意本协议的条款并按照页面上的提示完成全部的注册程序。用户注册后即表示用户与职业倾向测评系统达成协议，完全接受本协议项下的全部条款。</p>
+                    <p>1.2、用户注册成功后，职业倾向测评系统将给与每个用户一个唯一的用户帐号。该用户帐号及其在用户注册时设置的密码由用户负责保管；用户应当对以该用户帐号进行的所有活动和事件负法律责任。</p>
+                    <p>1.3、用户可以使用职业倾向测评系统各个频道的单项服务，当用户使用职业倾向测评系统各单项服务时，用户的使用行为视为其对该单项服务中发出的各类公告的同意。</p>
+                    <p>1.4、职业倾向测评系统会员服务协议以及各个频道单项服务条款和公告可由职业倾向测评系统随时更新，且无需另行通知用户。用户在使用相关服务时，应关注并遵守其所适用的相关条款。</p>
+                    <p>用户在使用职业倾向测评系统提供的各项服务之前，应仔细阅读本服务协议。如不同意本服务协议及/或随时对其的修改，用户可以主动停止使用职业倾向测评系统提供的服务；用户一旦使用职业倾向测评系统服务，即视为已了解并完全同意本服务协议各项内容，包括职业倾向测评系统对服务协议随时所做的任何修改。</p>
+                    <p>职业倾向测评系统有权随时根据有关法律、法规的变化以及公司经营状况和经营策略的调整等对本服务协议进行修改，而无需另行单独通知用户。修改后的协议会在职业倾向测评系统（www.myceping.com）上公布。用户可随时通过职业倾向测评系统浏览最新服务协议条款。当发生有关争议时，以最新的协议文本为准。如用户不同意职业倾向测评系统对本服务协议相关条款所做的修改，有权停止使用网络服务。如果用户继续使用网络服务，则视为用户接受职业倾向测评系统对本服务协议相关条款所做的修改。</p>
+                    <p>1.5用户应当同意，用户在职业倾向测评系统，域名为myceping.com上发生的所有行为，不可撤销地遵守本服务协议；即使用户不是职业倾向测评系统的注册用户，在用户使用职业倾向测评系统的任一服务的同时就表示用户同意：完全接受本服务协议的全部条款，用户在职业倾向测评系统上的一切行为将被视同为注册用户的行为而受本服务协议的约束。</p>
+                    <p><em>二、注册信息和隐私保护</em></p>
+                    <p>2.1 职业倾向测评系统帐号（即职业倾向测评系统用户ID）的所有权归职业倾向测评系统，用户完成注册申请手续后，获得职业倾向测评系统帐号的使用权。用户应提供及时、详尽及准确的个人资料，并在工作变动、职位变动等关键时刻更新注册资料以及职业测评报告、名片等各种信息，使得自己的个人资料符合及时、详尽、准确的要求。所有原始键入的资料将引用为注册资料。如果因注册信息不真实而引起任何问题，以及由问题所带来任何后果，职业倾向测评系统不负任何责任。职业倾向测评系统因经营需要，有权回收用户的职业倾向测评系统帐号。</p>
+                    <p>2.2 用户不应将其帐号、密码转让或出借予他人使用。如用户发现其帐号遭他人非法使用，应立即通知职业倾向测评系统。因黑客行为或用户的保管疏忽导致帐号、密码遭他人非法使用，职业倾向测评系统不承担任何责任。</p>
+                    <p>2.3 用户理解并接受职业倾向测评系统提供的服务中可能包括广告，用户同意职业倾向测评系统有权在提供网络服务过程中以各种方式投放各种商业性广告或其他任何类型的商业信息（包括但不限于在职业倾向测评系统的任何页面上投放广告）。并且，用户同意接受职业倾向测评系统通过电子邮件、手机短信或其他方式向用户发送招聘信息或其他相关商业信息。用户同意在使用过程中职业倾向测评系统通过各种通知方式（包括但不限于各网站第三方API接口提供的通知、私信、公告以及电子邮件等）显示职业倾向测评系统和第三方供应商或合作伙伴提供的信息。</p>
+                    <p>2.4 职业倾向测评系统不对外公开或向第三方提供单个用户的注册资料，除非：</p>
+                    <p>（1）事先获得用户的明确授权；</p>
+                    <p>（2）只有透露用户的个人资料，才能提供用户所要求的产品和服务；</p>
+                    <p>（3）根据有关的法律法规要求；</p>
+                    <p>（4）按照相关政府主管部门或者司法、行政等执法部门的要求；</p>
+                    <p>（5）为维护职业倾向测评系统的合法权益。</p>
+                    <p>2.5 职业倾向测评系统可能会与第三方合作向用户提供相关的网络服务，在此情况下，如该第三方同意承担与职业倾向测评系统同等的保护用户隐私的责任，则职业倾向测评系统有权将用户的包括但不限于注册资料、职业测评报告、名片、人脉信息等信息提供给该第三方。</p>
+                    <p>2.6 在不透露单个用户隐私资料的前提下，职业倾向测评系统有权对整个用户数据库进行分析并对用户数据库进行商业上的利用。</p>
+                    <p>2.7 用户注册职业倾向测评系统帐户，使用其他职业倾向测评系统产品或服务，访问职业倾向测评系统网页, 或参加促销和有奖游戏时，职业倾向测评系统会收集用户个人身份识别资料，并会将这些资料用于：改进为用户提供的服务及网页内容。</p>
+                    <p>2.8 为了便利用户快速完成职业测评报告，用户可以使用职业倾向测评系统提供的职业测评报告导入服务，用户有权选择使用或者不使用，当用户使用该服务时，就表示用户理解并接受本服务条款。在使用该服务时，用户同意：不可撤销地授权职业倾向测评系统按照用户在职业倾向测评系统填写的第三方网站的帐号和密码，登录用户在第三方网站的个人帐号，获取用户个人帐号下的所有信息到职业倾向测评系统。职业倾向测评系统按照用户填写的帐号和密码在第三方网站获取信息的行为完全来自于用户的授权，职业倾向测评系统对因此给用户造成的任何损失均不承担责任。但用户确认，用户使用本服务时，仍应完全遵守本服务协议及职业倾向测评系统制定的各项规则及页面提示等。</p>
+                    <p>2.8.1用户确认，在职业倾向测评系统填写的第三方网站的帐号和密码属用户个人所有，并且准确、完整，若用户填写的帐号和密码为盗用或者存在虚假、不完整，由此产生的一切责任由用户本人承担，职业倾向测评系统不承担任何责任。</p>
+                    <p>2.8.2用户在使用本服务过程中，本协议内容、网页上出现的关于操作的提示等内容是用户使用本服务的相关规则，用户使用本服务即表示同意接受本服务的相关规则。用户了解并同意职业倾向测评系统有权单方修改服务的相关规则，而无须征得用户同意，服务规则应以用户使用服务时的页面提示为准，用户同意并遵守服务规则是使用本服务的前提。</p>
+                    <p>2.8.3用户明确，对于职业倾向测评系统按照用户填写的帐号和密码在第三方网站获取的信息，是用户本人或者合法授权人录入的或者是用户在第三方网站上活动时形成的关于用户本人的一切信息，本公司不对导入职业倾向测评系统的关于用户本人的一切信息的真实性、准确性、完整性负责，而由用户本人承担一切责任。</p>
+                    <p>2.8.4用户确认，在第三方网站登载的一切信息不侵犯任何第三方的任何权利，若职业倾向测评系统按照用户填写的帐号和密码登陆第三方网站导入信息到职业倾向测评系统，无论是登陆第三方网站的过程还是导入的信息本身，侵犯任何第三方的任何权利，由用户承担全部责任；若因此给职业倾向测评系统或职业倾向测评系统的关联公司/合作伙伴造成任何损失，均由用户负责赔偿。</p>
+                    <p>2.8.5 用户请放心，职业倾向测评系统仅会使用用户提供的帐号和密码为用户完成职业测评报告及相关信息导入，而不会恶意使用用户的帐号和密码从事侵犯用户合法权益的任何行为。</p>
+                    <p>2.8.6在法律允许的情况下，职业倾向测评系统对于与本服务有关或由本服务引起的任何间接的、惩罚性的、特殊的、派生的损失（包括业务损失、收益损失、利润损失、商誉损失、使用数据或其他经济利益的损失），不论是如何产生的，也不论是由对本协议的违约（包括违反保证）还是由侵权造成的，均不负有任何责任，即使事先已被告知此等损失的可能性。</p>
+                    <p>2.9 由于职业倾向测评系统是一个职业网络，用户可以把自己的职业测评报告及其各种相关信息放入我们的数据库。与职业倾向测评系统合作的招聘企业或人员可以通过我们的数据库找到用户的职业测评报告及其各种相关信息。当用户向职业倾向测评系统递交自己的职业测评报告及其各种相关信息时，用户已经同意授予与职业倾向测评系统合作的招聘企业或人员法律上许可的对该职业测评报告及其各种相关信息进行查询及使用的权利。对于因此而引起的任何法律纠纷（包括但不限于招聘企业或人员错误或非法使用前述职业测评报告及其各种相关信息），职业倾向测评系统不承担任何法律责任。</p>
+                </div>
+                <div class="ft">
+                    <input id="J-btnAgree" class="btn-agree" type="button" value="已阅读并同意此协议">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <div class="ftMsg">
+                <p class="cntMsg">
+                    <span><i class="i-telFt"></i>客服电话：010-888-8888&nbsp;&nbsp;400-888-8888</span>
+                    <span class="adress">公司地址：北京市海淀区交大东路616号1-808室</span>
+                </p>
+                <p class="copyright">
+                    Copyright（C）2009 ouhuiJY.com | All rights reserved 京ICP备88866688号 版权所有：北京汇成教育股份有限公司
+                </p>
+            </div>
+            <div class="contact">
+                <div class="m-qq mod" href="javascript:;">
+                    <i class="i-qq"></i>
+                    <div class="qqMsg ctBlock">
+                        <h4>官方QQ群</h4>
+                        <p>群5：475953451</p>
+                        <p>群6：143032683（浙江）</p>
+                    </div>
+                </div>
+                <div class="m-wx mod" href="javascript:;">
+                    <i class="i-wx"></i>
+                    <div class="wxMsg ctBlock">
+                        <h4>微信客服</h4>
+                        <p>请扫描二维码</p>
+                        <img src="public/images/img-wx.png" alt="">
+                    </div>
+                </div>
+                <div class="m-wb mod" href="javascript:;">
+                    <i class="i-wb"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="public/js/jquery-1.8.3.min.js"></script>
+    <script src="login/js/vkboard.js"></script>
+    <script type="text/javascript" src="login/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="login/js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="login/js/resgin.js"></script>
+    <script src="login/js/login.js"></script>
+</body>
+
+</html>

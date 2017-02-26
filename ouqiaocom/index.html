@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>欧桥</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css" />
+</head>
+
+<body>
+    <div class="site-nav">
+        <div class="wrap">
+            <div class="m-left">
+                <a class="link-fav" href="javascript:;">收藏本站</a>
+            </div>
+            <div class="menu"><a class="link-login" href="login.html">登录</a><i></i><a class="link-regist" href="login.html">注册</a></div>
+        </div>
+    </div>
+    <div class="site-menu">
+        <div class="wrap">
+            <h1>AUKO</h1>
+            <div class="menu-list">
+                <ul id="J-siteMenu">
+                    <li class="cur"><a href="index.html">首页</a></li>
+                    <li><a href="product-public.html">产品</a></li>
+                    <li><a href="app.html">APP</a></li>
+                    <li><a href="info.html">咨讯</a></li>
+                    <li><a href="personalCenter.html">会员</a></li>
+                </ul>
+                <a href="javascript:;" class="link-cart"><i class="i-cart"></i>在线商城</a>
+            </div>
+        </div>
+    </div>
+    <div class="flexslider">
+        <ul class="slides">
+            <li><img src="images/banner2.png" /></li>
+            <li><img src="images/banner.png" /></li>
+        </ul>
+    </div>
+    <div class="mainContent">
+        <div class="g-proList">
+            <div class="wrap">
+                <ul>
+                    <li>
+                        <a href="javascript:;"><img src="images/img-pro1.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/img-pro2.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/img-pro3.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/img-pro4.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="J-tab">
+            <div class="wrap">
+                <div class="J-tabHd">
+                    <ul class="ul-tab">
+                        <li class="active"><a href="javascript:;">养生堂</a></li>
+                        <li><a href="javascript:;">学术会议</a></li>
+                        <li><a href="javascript:;">公司介绍</a></li>
+                    </ul>
+                </div>
+                <div class="J-tabCnt">
+                    <div class="J-cnt active">
+                        <div id="featureCarousel">
+                            <div class="feature">
+                                <img class="J-pos" alt="" src="images/img-pos1.png">
+                                <video width="100%" height="100%" poster="images/img-pos1.png">
+                                    <source src="images/video.mp4" type="video/mp4">
+                                    <source src="movie.ogg" type="video/ogg"> 您的浏览器不支持 video 标签。
+                                </video>
+                            </div>
+                            <div class="feature">
+                                <img class="J-pos" alt="" src="images/img-pos2.png">
+                                <video width="100%" height="100%" poster="images/img-pos2.png">
+                                    <source src="images/video.mp4" type="video/mp4">
+                                    <source src="movie.ogg" type="video/ogg"> 您的浏览器不支持 video 标签。
+                                </video>
+                            </div>
+                            <div class="feature">
+                                <img class="J-pos" alt="" src="images/img-pos3.png">
+                                <video width="100%" height="100%" poster="images/img-pos3.png">
+                                    <source src="images/video.mp4" type="video/mp4">
+                                    <source src="movie.ogg" type="video/ogg"> 您的浏览器不支持 video 标签。
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="J-cnt">
+                    </div>
+                    <div class="J-cnt">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <div class="mod">
+                <dl>
+                    <dt>使用指南</dt>
+                    <dd>
+                        <p><a href="javascript:;">使用说明</a></p>
+                        <p><a href="javascript:;">数字教学</a></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd>
+                        <p><a href="javascript:;">公司介绍</a></p>
+                        <p><a href="javascript:;">隐私政策</a></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>产品合作</dt>
+                    <dd>
+                        <p><a href="javascript:;">渠道合作</a></p>
+                    </dd>
+                </dl>
+                <dl class="contact">
+                    <dt>联系我们</dt>
+                    <dd>
+                        <div class="cnt">
+                            <i class="i-tel"></i>
+                            <p class="txt-tel">4001-666-888</p>
+                            <p>7 * 24 小时服务热线</p>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="g-copyright">
+            京ICP备16005769号
+        </div>
+    </div>
+    <script src="js/jquery-v1.10.2.min.js"></script>
+    <script src="js/jquery.featureCarousel.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        //视频切换
+        $("#featureCarousel").featureCarousel({
+            largeFeatureWidth: 484,
+            largeFeatureHeight: 272,
+            smallFeatureWidth: 422,
+            smallFeatureHeight: 234
+        });
+        //全屏轮播
+        $(".flexslider").flexslider({
+            slideshowSpeed: 40000, //展示时间间隔ms
+            animationSpeed: 400, //滚动时间ms
+            touch: true, //是否支持触屏滑动
+            animation: "slide"
+        });
+        $('.flexslider ul li img').css('marginLeft',-(1920-$(window).width())/2+'px');
+        // 切换标签js
+        $('.J-tabHd li').each(function(i) {
+                $(this).on('click', function() {
+                    $(this).addClass('active').siblings('li').removeClass('active');
+                    $('.J-tabCnt .J-cnt').eq(i).addClass('active').siblings('.J-cnt').removeClass('active');
+                })
+            })
+            // 视频播放点击事件
+        $('.J-pos').click(function() {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active').siblings('video').get(0).pause();
+            } else {
+                $(this).addClass('active').siblings('video').get(0).play();
+            }
+        })
+    });
+    </script>
+</body>
+
+</html>

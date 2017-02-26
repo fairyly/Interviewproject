@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>个人中心</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+</head>
+
+<body>
+    <div class="site-nav">
+        <div class="wrap">
+            <div class="m-left">
+                <a class="link-fav" href="javascript:;">收藏本站</a>
+            </div>
+            <div class="menu"><a class="link-login" href="login.html">登录</a><i></i><a class="link-regist" href="regist.html">注册</a></div>
+        </div>
+    </div>
+    <div class="site-menu">
+        <div class="wrap">
+            <h1>AUKO</h1>
+            <div class="menu-list">
+                <ul id="J-siteMenu">
+                    <li class="cur"><a href="index.html">首页</a></li>
+                    <li><a href="product-public.html">产品</a></li>
+                    <li><a href="app.html">APP</a></li>
+                    <li><a href="info.html">咨讯</a></li>
+                    <li><a href="personalCenter.html">会员</a></li>
+                </ul>
+                <a href="javascript:;" class="link-cart"><i class="i-cart"></i>在线商城</a>
+            </div>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="wrap">
+            <div class="personalCenter">
+                <div class="g-personMenu">
+                    <div class="hd">
+                        <div class="m-pic">
+                            <img src="images/img-hdPhoto.png" alt="">
+                        </div>
+                        <div class="cnt">
+                            <h2>小莫 <span>下午好</span></h2>
+                            <p class="wel">欢迎登录！</p>
+                        </div>
+                    </div>
+                    <div class="bd">
+                        <ul>
+                            <li class="cur">
+                                <a href="personalCenter.html"><i class="i-data"></i>个人资料</a>
+                            </li>
+                            <li>
+                                <a href="ecgRecords.html"><i class="i-eleMini"></i>心电档案</a>
+                            </li>
+                            <li>
+                                <a href="newsCenter.html"><i class="i-msg"></i>消息中心</a>
+                            </li>
+                            <li>
+                                <a href="download.html"><i class="i-key"></i>资料下载</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="g-personCnt">
+                    <img src="images/personalBanner.png" alt="">
+                    <div class="perCnt">
+                        <ul>
+                            <li>
+                                亲爱的小墨，欢迎你！
+                            </li>
+                            <li>
+                                <label>当前头像：</label>
+                                <span class="cnt"><div class="hdPt">
+                                    <img src="images/img-hdPhoto.png" alt="">
+                                    <div class="mask">点击上传</div>
+                                </div></span>
+                            </li>
+                            <li>
+                                <label>姓名：</label>
+                                <span class="cnt"><em>小莫</em><input type="text" value="小莫"><i class="J-edit i-edit"></i></span>
+                            </li>
+                            <li>
+                                <label>年龄：</label>
+                                <span class="cnt"><em>18岁</em><input type="text" value="18岁"><i class="J-edit i-edit"></i></span>
+                            </li>
+                            <li>
+                                <label>性别：</label>
+                                <span class="cnt"><label><input type="radio" name="sex">男</label><label><input type="radio" name="sex">女</label></span>
+                            </li>
+                            <li>
+                                <label>电话：</label>
+                                <span class="cnt"><em>99595959@qq.com</em><input type="text" value="99595959@qq.com"><i class="J-edit i-edit"></i></span>
+                            </li>
+                            <li>
+                                <label>医院诊断：</label>
+                                <span class="cnt"><em>高血脂</em><input type="text" value="高血脂"><i class="J-edit i-edit"></i></span>
+                            </li>
+                            <li>
+                                <label>病史记录：</label>
+                                <span class="cnt"><em>无</em><input type="text" value="无"><i class="J-edit i-edit"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <div class="mod">
+                <dl>
+                    <dt>使用指南</dt>
+                    <dd>
+                        <p><a href="javascript:;">使用说明</a></p>
+                        <p><a href="javascript:;">数字教学</a></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd>
+                        <p><a href="javascript:;">公司介绍</a></p>
+                        <p><a href="javascript:;">隐私政策</a></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>产品合作</dt>
+                    <dd>
+                        <p><a href="javascript:;">渠道合作</a></p>
+                    </dd>
+                </dl>
+                <dl class="contact">
+                    <dt>联系我们</dt>
+                    <dd>
+                        <div class="cnt">
+                            <i class="i-tel"></i>
+                            <p class="txt-tel">4001-666-888</p>
+                            <p>7 * 24 小时服务热线</p>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="g-copyright">
+            京ICP备16005769号
+        </div>
+    </div>
+    <script src="js/jquery-v1.10.2.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('.J-edit').click(function() {
+            console.log('a');
+            $(this).siblings('input').toggleClass('active').siblings('em').toggleClass('toggle');
+        })
+
+    });
+    </script>
+</body>
+
+</html>

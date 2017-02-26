@@ -1,0 +1,510 @@
+
+.g-members {
+    overflow: hidden;
+    border-top: 1px solid #f5f4f4;
+    padding:40px 0;
+    background: #f2f2f2;
+}
+
+.g-members .wrap{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e7e6e6;
+    padding:30px 32px;
+    background:#fff;
+
+}
+.g-members .g-menu {
+    position: absolute;
+    width: 308px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.g-members .g-contain {
+    padding-left: 272px;
+    overflow: hidden;
+    background:#f4f4f4;
+}
+
+.g-members .g-menu .hdMsg {
+    color: #949398;
+    padding: 28px 16px 42px 16px;
+    overflow: hidden;
+}
+
+.g-members .g-menu .hdMsg .u-photo {
+    position: relative;
+    float: left;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+    padding: 4px;
+    background: #fff;
+    border: 3px solid #e7e7e7;
+}
+.g-members .g-menu .hdMsg .m-file,
+.g-members .g-menu .hdMsg .m-file input{
+    cursor:pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.g-members .g-menu .hdMsg .u-photo:hover .m-file{
+    background:rgba(0,0,0,.5) url(../images/i-cam.png) no-repeat center center;
+
+}
+.g-members .g-menu .hdMsg .m-file input {
+    opacity: 0;
+}
+
+.g-members .g-menu .hdMsg .u-photo img {
+    border-radius: 50%;
+    width: 77px;
+}
+
+.g-members .g-menu .hdMsg .u-selfMsg {
+    overflow: hidden;
+    margin-top: 18px;
+}
+
+.g-members .g-menu .hdMsg .u-selfMsg h2 {
+    color: #0a9ae8;
+    font-size: 24px;
+    display: inline-block;
+}
+
+.g-members .g-menu .hdMsg .u-selfMsg .subTxt {
+    color: #929292;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.g-members .g-menu .hdMsg .u-selfMsg .wel {
+    color: #929292;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.g-members .g-menu .hdMsg .u-selfMsg .tip {
+    color: #929292;
+    font-size: 12px;
+}
+
+.g-members .g-menu .hdMsg .u-selfMsg .tip em {
+    color: #3eabe7;
+}
+
+.g-members .g-menu .hdMsg .u-selfMsg .tip em {
+    color: #197fa5;
+    margin-left: 10px;
+}
+
+.g-members .g-menu .g-menuList{
+    padding:0 9px 0 12px;
+}
+.g-members .g-menu .g-menuList h3 {
+    position: relative;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    background: #044f9f;
+}
+
+.g-members .g-menu .g-menuList h3:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -12px;
+    border-top: 12px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 12px solid #f5f3f4;
+}
+
+.g-members .g-menu .g-menuList ul li {
+    height: 56px;
+    line-height: 56px;
+    color: #444444;
+    font-size: 16px;
+    padding-right: 28px;
+}
+.g-members .g-menu .g-menuList ul li:hover,
+.g-members .g-menu .g-menuList ul li.cur {
+    color: #fff;
+    background:#0093e8 url(../images/bg-arrow.png) no-repeat 259px 0;
+}
+
+.g-members .g-menu .g-menuList ul li a {
+    display: block;
+    padding-left: 52px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.g-members .g-menu .g-menuList ul li a:hover,
+.g-members .g-menu .g-menuList ul li.cur a {
+}
+
+.i-data,
+.g-members .g-menu .g-menuList ul li i {
+    display: inline-block;
+    width: 26px;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 18px;
+}
+
+.i-user {
+    background: url(../images/i-user.png) no-repeat center center;
+}
+.i-data, .g-members .g-menu .g-menuList ul li.cur i.i-user,
+.i-data, .g-members .g-menu .g-menuList ul li:hover i.i-user{
+    background: url(../images/i-user-active.png) no-repeat center center;
+
+}
+
+.i-test {
+    background: url(../images/i-test.png) no-repeat center center;
+}
+.i-data, .g-members .g-menu .g-menuList ul li.cur i.i-test,
+.i-data, .g-members .g-menu .g-menuList ul li:hover i.i-test{
+    background: url(../images/i-test-active.png) no-repeat center center;
+
+}
+
+
+.i-job {
+    background: url(../images/i-jobs.png) no-repeat center center;
+}
+
+
+.i-data, .g-members .g-menu .g-menuList ul li.cur i.i-job,
+.i-data, .g-members .g-menu .g-menuList ul li:hover i.i-job{
+    background: url(../images/i-jobs-active.png) no-repeat center center;
+
+}
+
+.i-apply {
+    background: url(../images/i-apply.png) no-repeat center center;
+}
+
+
+.i-data, .g-members .g-menu .g-menuList ul li.cur i.i-apply,
+.i-data, .g-members .g-menu .g-menuList ul li:hover i.i-apply{
+    background: url(../images/i-apply-active.png) no-repeat center center;
+
+}
+
+.i-gui {
+    background: url(../images/i-gui.png) no-repeat center center;
+}
+
+
+.i-data, .g-members .g-menu .g-menuList ul li.cur i.i-gui,
+.i-data, .g-members .g-menu .g-menuList ul li:hover i.i-gui{
+    background: url(../images/i-gui-active.png) no-repeat center center;
+
+}
+
+.g-members .g-contain .topNav {
+    height: 44px;
+    line-height: 44px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.g-members .g-contain .topNav .welcome {
+    float: left;
+}
+
+.g-members .g-contain .topNav ul {
+    float: right;
+}
+
+.g-members .g-contain .topNav ul li {
+    float: right;
+    margin: 0 10px;
+}
+
+.g-members .g-contain .g-memMenu {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.g-members .g-contain .g-memMenu ul {
+    overflow: hidden;
+}
+
+.g-members .g-contain .g-memMenu ul li {
+    float: left;
+    margin: 10px;
+}
+
+.g-members .g-contain .g-memMenu ul li p {
+    margin-top: 10px;
+}
+
+.g-members .g-contain .g-fluBox {
+    margin-left: 162px;
+}
+
+
+.g-fluBox .m-cntBox .hd ul {
+    overflow: hidden;
+}
+
+.g-fluBox .m-cntBox .hd ul li {
+    float: left;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+.g-fluBox .m-cntBox .hd ul li.cur {
+    border: 1px solid #ccc;
+}
+
+.g-fluBox .m-cntBox .bd ul li {
+    margin-top: 28px;
+    font-size: 18px;
+    color: #666;
+}
+
+.g-fluBox .m-cntBox .bd ul li .tt {
+    display: inline-block;
+    width: 122px;
+    color: #666666;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+.iptTxt,
+.select {
+    
+    width: 376px;
+    border: 1px solid #e7e6e6;
+    height: 44px;
+    line-height: 44px;
+    padding:0 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    background: #fff;
+}
+.iptTxt.medium {
+    width: 260px;
+}
+.m-addSchool {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+.m-addSchool em {
+    display: block;
+    color: #666;
+    font-size: 12px;
+}
+.m-addSchool .btnAdd {
+    display: inline-block;
+    color: #fff;
+    background: #f88a05;
+    font-size: 12px;
+    padding: 6px 12px;
+    margin-top: 6px;
+}
+.select {
+    -webkit-appearance: none; 
+    background:#fff url(../images/icon-select.png) no-repeat right center;
+}
+.iptSex {
+    position: relative;
+    font-size: 16px;
+    color: #999;
+    padding: 7px 10px 7px 25px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background: #fff;
+}
+.iptSex input{
+    opacity: 0;
+}
+.select.medium {
+    width: 170px;
+    margin-right: 40px;
+}
+.iptSex.man {
+    background:#fff url(../images/i-man.png) no-repeat 12px center;
+}
+.iptSex.active.man {
+    background:#f88a05 url(../images/i-man-active.png) no-repeat 12px center;
+}
+.iptSex.woman {
+    background:#fff url(../images/i-woman.png) no-repeat 12px center;
+}
+.iptSex.active.woman {
+    background:#f88a05 url(../images/i-woman-active.png) no-repeat 12px center;
+}
+.iptSex.active {
+    color: #fff;
+    background: #f88a05;
+}
+.iptTxt.active {
+    border-color: #f88a05;
+}
+.iptTxt[disabled]{
+    background: #f0f0f0;
+}
+
+.btnDefult {
+    width: 270px;
+    height: 46px;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    border: 0;
+    color: #fff;
+    padding: 10px 24px;
+    font-size: 20px;
+    margin-left: 128px;
+    margin-top: 60px;
+    background: #f88a05;
+}
+.btnBox{
+
+    margin: 30px 0 30px 0;
+}
+
+
+.m-cntBox {
+    margin:62px 0;
+}
+
+.m-cntBox ul li {
+    margin: 18px 0;
+    font-size: 14px;
+}
+
+
+.m-cntBox ul li .cnt {
+    color: #999999;
+}
+
+.selectFill {
+    position: relative;
+    display: inline-block;
+
+}
+.selectFill .fillTxt{    
+    position: absolute;
+    width: 346px;
+    height: 42px;
+    left: 1px;
+    top: 1px;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+.g-layerPerInfo .mod{
+    width: 524px;
+    padding: 30px 0 40px;
+    background: #fff;
+}
+.m-layPerInfo li {
+    margin:15px 0;
+    text-align: left;
+}
+
+.m-layPerInfo li label {
+    font-size: 14px;
+}
+.dpNone {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/*完善资料*/
+.g-members .g-perfectInfo {
+    background: #fff;
+}
+.tt-itl{    position: absolute;
+    width: 100%;
+    top: 8%;
+    height: 2.4em;
+    line-height: 2.4em;
+    color: #fff;
+    left: -39%;
+    text-align: center;
+    font-size: 24px;
+    background: #49b6f5;
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    -o-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+}
+
+.ttTipFill {
+    color: #f88a05;
+    margin-bottom: 40px;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.m-perInfo {
+    width: 700px;
+    overflow: hidden;
+
+}
+.g-members .g-perfectInfo .g-fluBox{
+    margin-left: 0;
+}
+.g-perfectInfo .iptTxt,
+.g-perfectInfo .select.medium{
+    width: 200px;
+    margin:15px 30px 15px 0;
+}
+.g-perfectInfo .iptSex {
+    border: 1px solid #f88a05;
+
+}
+.g-perfectInfo .select{
+    width: 250px;
+    margin:15px 30px 15px 0;
+}
+.g-perfectInfo .selectFill{
+    width: 250px;
+}
+
+.g-perfectInfo .selectFill .fillTxt {
+    width: 219px;
+    top: 16px;
+}
+
+.g-perfectInfo .m-addSchool{
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

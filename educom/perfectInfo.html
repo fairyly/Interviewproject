@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>完善资料</title>
+    <link rel="stylesheet" href="public/css/base.css">
+    <link rel="stylesheet" href="center/css/center.css" />
+    <link rel="stylesheet" href="center/css/foundation-datepicker.min.css" />
+</head>
+
+<body>
+    <div class="site-nav">
+        <div class="wrap">
+            <a href="index.html"><h1 class="logo">汇成教育</h1></a>
+            <div class="navMod">
+                <ul class="g-menu">
+                    <li><a href="javascript:;">首页</a></<li></li>
+                    <li><a href="javascript:;">个人中心</a></li>
+                    <li class="cur"><a href="javascript:;">测评</a></li>
+                    <li><a href="javascript:;">社区</a></li>
+                </ul>
+                <div class="g-mainSearch">
+                    <input type="text" placeholder="搜索你感兴趣的学校、专业">
+                </div>
+                <div class="g-topLink">
+                    <a class="login" href="javascript:;">登录</a>
+                    <i>|</i>
+                    <a class="regist" href="javascript:;">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="g-members">
+            <div class="wrap">
+                <h2 class="tt-itl">青少年职业倾向测评</h2>
+                <div class="g-contain g-perfectInfo">
+                    <div class="g-fluBox">
+                        <div class="m-cntBox">
+                            <div class="bd">
+                                <div class="m-perInfo">
+                                    <h3 class="ttTipFill">填写您的个人信息，保证测评匹配准确度！</h3>
+                                    <input class="J-ipt iptTxt" type="text" placeholder="姓名">
+                                    <input class="J-ipt iptTxt" type="text" placeholder="民族">
+                                    <label class="J-iptSex iptSex man active">
+                                        <input type="radio" name="sex" value="man" checked>男</label>
+                                    <label class="J-iptSex iptSex woman">
+                                        <input type="radio" name="sex" value="woman">女</span>
+                                    </label>
+                                    <input class="J-ipt iptTxt" type="text" placeholder="出生日期" value="" id="demo-1">
+                                    <select class="J-ipt select medium" name="" id="">
+                                        <option value="">北京市</option>
+                                    </select>
+                                    <select class="J-ipt select medium" name="" id="">
+                                        <option value="">北京市</option>
+                                    </select>
+                                    <select class="J-ipt select" name="" id="">
+                                        <option value="">学校类型</option>
+                                        <option value="">小学</option>
+                                        <option value="">初中</option>
+                                        <option value="">中职</option>
+                                        <option value="">高中</option>
+                                        <option value="">高职</option>
+                                        <option value="">本科</option>
+                                    </select>
+                                    <input class="J-ipt iptTxt medium" type="text" placeholder="学校名称    "><span class="m-addSchool"><em>找不到你的学校？</em><a class="btnAdd" href="javascript:;">申请添加学校</a></span>
+                                    <div class="selectFill">
+                                        <span class="selectWrap">
+                                                <select class="select">
+                                                <option value="德国">德国</option>
+                                                <option value="挪威">挪威</option>
+                                                <option value="瑞士"> 瑞士</option>
+                                                </select></span>
+                                        <input name="box" class="fillTxt" placeholder="专业名称">
+                                    </div>
+                                    <div class="btnBox">
+                                        <input class="btnDefult" type="button" name="" value="保存，继续测评">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <div class="ftMsg">
+                <p class="cntMsg">
+                    <span><i class="i-telFt"></i>客服电话：010-888-8888&nbsp;&nbsp;400-888-8888</span>
+                    <span class="adress">公司地址：北京市海淀区交大东路616号1-808室</span>
+                </p>
+                <p class="copyright">
+                    Copyright（C）2009 ouhuiJY.com | All rights reserved 京ICP备88866688号 版权所有：北京汇成教育股份有限公司
+                </p>
+            </div>
+            <div class="contact">
+                <div class="m-qq mod" href="javascript:;">
+                    <i class="i-qq"></i>
+                    <div class="qqMsg ctBlock">
+                        <h4>官方QQ群</h4>
+                        <p>群5：475953451</p>
+                        <p>群6：143032683（浙江）</p>
+                    </div>
+                </div>
+                <div class="m-wx mod" href="javascript:;">
+                    <i class="i-wx"></i>
+                    <div class="wxMsg ctBlock">
+                        <h4>微信客服</h4>
+                        <p>请扫描二维码</p>
+                        <img src="public/images/img-wx.png" alt="">
+                    </div>
+                </div>
+                <div class="m-wb mod" href="javascript:;">
+                    <i class="i-wb"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="public/js/jquery-1.8.3.min.js"></script>
+    <script src="center/js/foundation-datepicker.min.js"></script>
+    <script src="center/js/foundation-datepicker.zh-CN.js"></script>
+    <script>
+    $(function() {
+
+        $('#demo-1').fdatepicker({
+            format: 'yyyy-mm-dd'
+        });
+        $('.J-ipt').on('focus', function() {
+            $('.J-ipt').removeClass('active');
+            $(this).addClass('active');
+        })
+        $('.J-iptSex input').on('change', function() {
+            $(this).parent('.J-iptSex').removeClass('active').siblings('.J-iptSex').removeClass('active');
+            if ($(this).is('checked')) {} else {
+                $(this).parent('.J-iptSex').addClass('active').siblings('.J-iptSex').removeClass('active');
+
+            }
+        })
+    })
+    </script>
+</body>
+
+</html>

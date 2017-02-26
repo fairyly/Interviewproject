@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>记忆测试</title>
+    <link rel="stylesheet" href="public/css/base.css">
+    <link rel="stylesheet" href="test/css/test.css" />
+</head>
+
+<body>
+    <div class="site-nav">
+        <div class="wrap">
+            <a href="index.html"><h1 class="logo">汇成教育</h1></a>
+            <div class="navMod">
+                <ul class="g-menu">
+                    <li><a href="javascript:;">首页</a></<li></li>
+                    <li><a href="javascript:;">个人中心</a></li>
+                    <li class="cur"><a href="javascript:;">测评</a></li>
+                    <li><a href="javascript:;">社区</a></li>
+                </ul>
+                <div class="g-mainSearch">
+                    <input type="text" placeholder="搜索你感兴趣的学校、专业">
+                </div>
+                <div class="g-topLink">
+                    <a class="login" href="javascript:;">登录</a>
+                    <i>|</i>
+                    <a class="regist" href="javascript:;">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div id="J-layerNext" class="g-layer">
+            <div class="mask"></div>
+            <a class="sign btnNext" href="javascript:;">
+                <img src="test/images/img-suc.png" alt="">
+            </a>
+        </div>
+        <div id="J-layerPre" class="g-layer">
+            <div class="mask"></div>
+            <a class="sign btnPre" href="javascript:;">
+                <img src="test/images/img-fai.png" alt="">
+            </a>
+        </div>
+        <div id="J-layerWin" class="g-layer">
+            <div class="mask"></div>
+            <a class="sign btnWin" href="javascript:;">
+                <img src="test/images/img-win.png" alt="">
+            </a>
+        </div>
+        <div id="J-ttPanel" class="m-ttPanel">
+            <div class="mask"></div>
+            <div class="wrap cnt">
+                <p class="tips">您正在作答的试卷是：电脑答题体验</p>
+                <ul class="curCate">
+                    <li class="cur">形状知觉能力</li>
+                    <li>推理能力</li>
+                    <li>空间判断能力</li>
+                    <li>合作能力</li>
+                    <li>领导能力</li>
+                    <li>领导和合作能力</li>
+                    <li>数理能力</li>
+                    <li>记忆能力</li>
+                    <li>眼手协调能力</li>
+                </ul>
+                <p class="tips2">当前部分包含以下题目：</p>
+                <ul class="ttList">
+                    <li class="read">1</li>
+                    <li class="read star">2</li>
+                    <li class="read">3</li>
+                    <li class="read">4</li>
+                    <li class="read">5</li>
+                    <li class="cur">6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                </ul>
+                <input class="btn-default" type="button" value="提交改部分">
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="g-blockMenu">
+                <ul>
+                    <li class="cur"><a href="javascript:;"><i class="i-eye"></i>价值观倾向</a></li>
+                    <li><a href="javascript:;"><i class="i-ident"></i>人格特征</a></li>
+                    <li><a href="javascript:;"><i class="i-able"></i>能力倾向</a></li>
+                    <li><a href="javascript:;"><i class="i-interest"></i>职业兴趣</a></li>
+                </ul>
+            </div>
+            <div class="g-cntBlock">
+                <div class="hd">
+                    <h2>单选题</h2>
+                    <div class="subMenu">
+                        <label>答题计时：</label>
+                        <div class="m-time">
+                            <span id="min">15</span>
+                            <i>:</i>
+                            <span id="sec">00</span>
+                        </div>
+                        <div id="J-title" class="toggleBlock">
+                            <a class="target" href="javascript:;">
+                            题目面板
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bd">
+                    <div class="subHd">
+                        <div class="menMod">
+                            <span class="page"><em>1</em>/47</span>
+                            <div id="J-sign" class="m-sign">
+                                <i class="i-star"></i>
+                                <em>标记</em>
+                            </div>
+                        </div>
+                        <div class="memRule">
+                            <p>本测验分为顺背和倒背两个分测验，顺背有10个数字串，倒背有9个数字串。</p>
+                            <p>所有测试者均从第1项开始，每项都有两个相等长度的数字串（一个数字串记为一次尝试），两次尝试均失败则停止，数字串呈现时间为一个数字一秒（如数字串有5个数字，则整个数字串呈现5秒），第一次尝试失败则缩短一位，全部通过可加位。</p>
+                            <p>按通过的数字位数计分，顺背最高13分，倒背最高11分。</p>
+                        </div>
+                    </div>
+                    <div class="g-mem">
+                        <div class="hdMod">
+                            <h3 id="J-ttOrder">顺背</h3>
+                            <div class="u-countdown">
+                                <span><em id="countSec">3</em><i>s</i></span>
+                            </div>
+                        </div>
+                        <div class="m-question">
+                            <label>题目</label>
+                            <ul class="J-question active cnt">
+                                <li class="active"><span><em>5</em></span><span><em>8</em></span><span><em>2</em></span></li>
+                                <li><span><em>6</em></span><span><em>9</em></span><span><em>4</em></span></li>
+                                <li><span><em>6</em></span><span><em>4</em></span><span><em>3</em></span><span><em>9</em></span></li>
+                                <li><span><em>7</em></span><span><em>2</em></span><span><em>8</em></span><span><em>6</em></span></li>
+                                <li><span><em>4</em></span><span><em>2</em></span><span><em>7</em></span><span><em>3</em></span><span><em>1</em></span></li>
+                                <li><span><em>7</em></span><span><em>5</em></span><span><em>8</em></span><span><em>3</em></span><span><em>6</em></span></li>
+                                <li><span><em>6</em></span><span><em>1</em></span><span><em>9</em></span><span><em>4</em></span><span><em>7</em></span><span><em>3</em></span></li>
+                                <li><span><em>3</em></span><span><em>9</em></span><span><em>2</em></span><span><em>4</em></span><span><em>8</em></span><span><em>7</em></span></li>
+                                <li><span><em>5</em></span><span><em>9</em></span><span><em>1</em></span><span><em>7</em></span><span><em>4</em></span><span><em>2</em></span><span><em>8</em></span></li>
+                                <li><span><em>4</em></span><span><em>1</em></span><span><em>7</em></span><span><em>9</em></span><span><em>3</em></span><span><em>8</em></span><span><em>6</em></span></li>
+                                <li><span><em>5</em></span><span><em>8</em></span><span><em>1</em></span><span><em>9</em></span><span><em>2</em></span><span><em>6</em></span><span><em>4</em></span><span><em>7</em></span></li>
+                                <li><span><em>3</em></span><span><em>8</em></span><span><em>2</em></span><span><em>9</em></span><span><em>5</em></span><span><em>1</em></span><span><em>7</em></span><span><em>4</em></span></li>
+                                <li><span><em>2</em></span><span><em>7</em></span><span><em>5</em></span><span><em>8</em></span><span><em>6</em></span><span><em>2</em></span><span><em>5</em></span><span><em>8</em></span><span><em>4</em></span></li>
+                                <li><span><em>7</em></span><span><em>1</em></span><span><em>3</em></span><span><em>9</em></span><span><em>4</em></span><span><em>2</em></span><span><em>5</em></span><span><em>6</em></span><span><em>8</em></span></li>
+                                <li><span><em>3</em></span><span><em>4</em></span><span><em>8</em></span><span><em>3</em></span><span><em>6</em></span><span><em>5</em></span><span><em>9</em></span><span><em>2</em></span><span><em>1</em></span><span><em>7</em></span></li>
+                                <li><span><em>4</em></span><span><em>7</em></span><span><em>2</em></span><span><em>5</em></span><span><em>9</em></span><span><em>1</em></span><span><em>6</em></span><span><em>2</em></span><span><em>5</em></span><span><em>3</em></span></li>
+                                <li><span><em>9</em></span><span><em>6</em></span><span><em>2</em></span><span><em>7</em></span><span><em>6</em></span><span><em>1</em></span><span><em>3</em></span><span><em>8</em></span><span><em>1</em></span><span><em>4</em></span><span><em>7</em></span></li>
+                                <li><span><em>8</em></span><span><em>2</em></span><span><em>4</em></span><span><em>7</em></span><span><em>5</em></span><span><em>9</em></span><span><em>3</em></span><span><em>1</em></span><span><em>2</em></span><span><em>9</em></span><span><em>5</em></span></li>
+                                <li><span><em>2</em></span><span><em>7</em></span><span><em>9</em></span><span><em>2</em></span><span><em>5</em></span><span><em>3</em></span><span><em>8</em></span><span><em>3</em></span><span><em>4</em></span><span><em>1</em></span><span><em>9</em></span><span><em>6</em></span></li>
+                                <li><span><em>5</em></span><span><em>3</em></span><span><em>6</em></span><span><em>9</em></span><span><em>2</em></span><span><em>5</em></span><span><em>7</em></span><span><em>1</em></span><span><em>8</em></span><span><em>4</em></span><span><em>3</em></span><span><em>1</em></span></li>
+                                <li><span><em>4</em></span><span><em>1</em></span><span><em>5</em></span><span><em>2</em></span><span><em>6</em></span><span><em>8</em></span><span><em>3</em></span><span><em>9</em></span><span><em>2</em></span><span><em>7</em></span><span><em>1</em></span><span><em>8</em></span><span><em>2</em></span></li>
+                                <li><span><em>8</em></span><span><em>1</em></span><span><em>3</em></span><span><em>4</em></span><span><em>6</em></span><span><em>2</em></span><span><em>9</em></span><span><em>4</em></span><span><em>7</em></span><span><em>3</em></span><span><em>5</em></span><span><em>2</em></span><span><em>8</em></span></li>
+                            </ul>
+                            <ul id="J-fallback" class="J-question cnt">
+                                <li class="active"><span><em>2</em></span><span><em>4</em></span></li>
+                                <li><span><em>5</em></span><span><em>8</em></span></li>
+                                <li><span><em>6</em></span><span><em>2</em></span><span><em>9</em></span></li>
+                                <li><span><em>4</em></span><span><em>1</em></span><span><em>5</em></span></li>
+                                <li><span><em>3</em></span><span><em>2</em></span><span><em>7</em></span><span><em>8</em></span></li>
+                                <li><span><em>4</em></span><span><em>9</em></span><span><em>6</em></span><span><em>8</em></span></li>
+                                <li><span><em>1</em></span><span><em>5</em></span><span><em>2</em></span><span><em>8</em></span><span><em>6</em></span></li>
+                                <li><span><em>6</em></span><span><em>1</em></span><span><em>8</em></span><span><em>4</em></span><span><em>3</em></span></li>
+                                <li><span><em>5</em></span><span><em>3</em></span><span><em>9</em></span><span><em>4</em></span><span><em>1</em></span><span><em>8</em></span></li>
+                                <li><span><em>7</em></span><span><em>2</em></span><span><em>4</em></span><span><em>8</em></span><span><em>5</em></span><span><em>6</em></span></li>
+                                <li><span><em>8</em></span><span><em>1</em></span><span><em>2</em></span><span><em>9</em></span><span><em>3</em></span><span><em>6</em></span><span><em>5</em></span></li>
+                                <li><span><em>7</em></span><span><em>3</em></span><span><em>5</em></span><span><em>4</em></span><span><em>1</em></span><span><em>2</em></span><span><em>9</em></span></li>
+                                <li><span><em>3</em></span><span><em>1</em></span><span><em>4</em></span><span><em>9</em></span><span><em>5</em></span><span><em>7</em></span><span><em>1</em></span><span><em>6</em></span></li>
+                                <li><span><em>9</em></span><span><em>3</em></span><span><em>1</em></span><span><em>4</em></span><span><em>2</em></span><span><em>8</em></span><span><em>7</em></span><span><em>5</em></span></li>
+                                <li><span><em>9</em></span><span><em>6</em></span><span><em>1</em></span><span><em>7</em></span><span><em>2</em></span><span><em>7</em></span><span><em>4</em></span><span><em>6</em></span><span><em>3</em></span></li>
+                                <li><span><em>7</em></span><span><em>3</em></span><span><em>5</em></span><span><em>4</em></span><span><em>2</em></span><span><em>8</em></span><span><em>1</em></span><span><em>9</em></span><span><em>3</em></span></li>
+                                <li><span><em>3</em></span><span><em>6</em></span><span><em>7</em></span><span><em>1</em></span><span><em>4</em></span><span><em>2</em></span><span><em>9</em></span><span><em>5</em></span><span><em>8</em></span><span><em>1</em></span></li>
+                                <li><span><em>9</em></span><span><em>2</em></span><span><em>4</em></span><span><em>5</em></span><span><em>1</em></span><span><em>9</em></span><span><em>2</em></span><span><em>6</em></span><span><em>3</em></span><span><em>7</em></span></li>
+                                <li><span><em>3</em></span><span><em>4</em></span><span><em>8</em></span><span><em>1</em></span><span><em>3</em></span><span><em>6</em></span><span><em>7</em></span><span><em>2</em></span><span><em>9</em></span><span><em>4</em></span><span><em>8</em></span></li>
+                                <li><span><em>4</em></span><span><em>6</em></span><span><em>2</em></span><span><em>6</em></span><span><em>9</em></span><span><em>7</em></span><span><em>1</em></span><span><em>8</em></span><span><em>9</em></span><span><em>2</em></span><span><em>3</em></span></li>
+                            </ul>
+                        </div>
+                        <div class="m-answer">
+                            <label>答题区</label>
+                            <div class="J-answer cnt">
+                                <input type="text" value="" readonly>
+                                <input type="text" value="" readonly>
+                                <input type="text" value="" readonly>
+                                <input type="text" value="" readonly>
+                                <input type="text" value="" readonly>
+                                <input type="text" value="" readonly>
+                                <input type="text" value="" readonly>
+                                <input type="text" value="" readonly>
+                                <input type="text" value="" readonly>
+                                <input type="text" value="" readonly>
+                                <input type="text" value="" readonly>
+                                <input type="text" value="" readonly>
+                                <input type="text" value="" readonly>
+                            </div>
+                        </div>
+                        <div class="btnBox2">
+                            <input id="J-btnGet" type="button" value="确定" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <div class="ftMsg">
+                <p class="cntMsg">
+                    <span><i class="i-telFt"></i>客服电话：010-888-8888&nbsp;&nbsp;400-888-8888</span>
+                    <span class="adress">公司地址：北京市海淀区交大东路616号1-808室</span>
+                </p>
+                <p class="copyright">
+                    Copyright（C）2009 ouhuiJY.com | All rights reserved 京ICP备88866688号 版权所有：北京汇成教育股份有限公司
+                </p>
+            </div>
+            <div class="contact">
+                <div class="m-qq mod" href="javascript:;">
+                    <i class="i-qq"></i>
+                    <div class="qqMsg ctBlock">
+                        <h4>官方QQ群</h4>
+                        <p>群5：475953451</p>
+                        <p>群6：143032683（浙江）</p>
+                    </div>
+                </div>
+                <div class="m-wx mod" href="javascript:;">
+                    <i class="i-wx"></i>
+                    <div class="wxMsg ctBlock">
+                        <h4>微信客服</h4>
+                        <p>请扫描二维码</p>
+                        <img src="public/images/img-wx.png" alt="">
+                    </div>
+                </div>
+                <div class="m-wb mod" href="javascript:;">
+                    <i class="i-wb"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="public/js/jquery-1.8.3.min.js"></script>
+    <script>
+    var leftTime = 15,
+        interVal;
+
+    var memory = {
+        //总答题计时
+        ShowCountDown: function(min) {
+            leftTime = leftTime * 60;
+            var leftsecond = parseInt(leftTime);
+            setInterval(function() {
+                leftsecond--;
+                var day1 = Math.floor(leftsecond / (60 * 60 * 24));
+                var hour = Math.floor((leftsecond - day1 * 24 * 60 * 60) / 3600);
+                var minute = Math.floor((leftsecond - day1 * 24 * 60 * 60 - hour * 3600) / 60);
+                var second = Math.floor(leftsecond - day1 * 24 * 60 * 60 - hour * 3600 - minute * 60);
+                var oMin = document.getElementById('min');
+                var oSec = document.getElementById('sec');
+                oMin.innerHTML = minute;
+                if (second < 10) second = '0' + second;
+                oSec.innerHTML = second;
+            }, 1000);
+
+        },
+        // 每小题倒计时
+        ShowCountSec: function(sec) {
+            var leftsecond = sec;
+            interVal = setInterval(function() {
+                leftsecond--;
+                var oSec = document.getElementById('countSec');
+                oSec.innerHTML = leftsecond;
+                if (leftsecond <= 0) {
+                    clearInterval(interVal);
+                    $('.J-question.active li.active').addClass('opacity');
+                    $('.J-answer').find('input').removeAttr("readonly").eq(0).focus();
+                    $('#J-btnGet').removeAttr('disabled');
+                }
+            }, 1000);
+        },
+        //获得填空格子个数
+        getAswNum: function() {
+            $('.J-answer').find('input').val('');
+            var iTitLen = $('.J-question.active li.active').find('span').length,
+                iTitLen2 = iTitLen - 1;
+            $('.J-answer').find('input:lt(' + iTitLen + ')').removeClass('hide');
+            $('.J-answer').find('input:gt(' + iTitLen2 + ')').addClass('hide');
+        }
+
+    }
+
+    $(function() {
+
+        //总答题计时调用
+        memory.ShowCountDown(leftTime);
+        // 每小题倒计时调用
+        memory.ShowCountSec(3);
+        //获得答题区格子个数
+        memory.getAswNum();
+
+
+        $('body')
+            //标记点击事件
+            .on('click', '#J-sign', function() {
+                $(this).toggleClass('active');
+            })
+            //题目面板点击事件
+            .on('click', '#J-title', function() {
+                if ($(this).hasClass('active')) {
+
+                    $('#J-ttPanel').slideUp();
+                    $(this).removeClass('active');
+                } else {
+                    $(this).addClass('active');
+                    $('#J-ttPanel').slideDown();
+                }
+            })
+            //答题区键盘事件
+            .on('keyup', '.J-answer input', function(event) {
+                if ((event.keyCode >= 96 && event.keyCode <= 105) || (event.keyCode >= 48 && event.keyCode <= 57)) {
+                    if ($(this).val() != '') {
+                        $(this).next('input').focus();
+                    }
+                } else if (event.keyCode == 13) {
+                    $('#J-btnGet').trigger('click');
+                }
+            })
+            //确定按钮事件
+            .on('click', '#J-btnGet', function() {
+                //请求答案对错
+                /*$.ajax({
+                        url: '/path/to/file',
+                        type: 'default GET (Other values: POST)',
+                        dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+                        data: {
+                            param1: 'value1'
+                        },
+                    })*/
+
+
+                //if true  (答对提示
+                $('#J-layerNext').show();
+
+                //if false(答错提示
+                // $('#J-layerPre').show();
+
+                //if win（闯关成功
+                // $('#J-layerWin').show();
+            })
+
+
+        //答题正确 弹窗 点击事件
+        .on('click', '#J-layerNext .btnNext', function() {
+            //隐藏弹层
+            $(this).parent('.g-layer').hide();
+            //进入下一题
+            $('.J-question.active li.active').next('li').addClass('active').siblings('li').removeClass('active opacity');
+            //倒计时重新赋值
+            var countSec = $('.J-question.active li.active').find('span').length;
+            $('#countSec').html(countSec);
+            //倒计时调用
+            memory.ShowCountSec(countSec);
+            //让确定按钮失效
+            $('#J-btnGet').attr('disabled', true);
+            //获得答题区格子个数
+            memory.getAswNum();
+
+        })
+
+        //闯关成功 弹窗 点击事件
+        .on('click', '#J-layerWin .btnWin', function() {
+            //调出倒背题目
+            $('#J-fallback').addClass('active').siblings('.J-question').removeClass('active');
+            //标题改为倒背
+            $('#J-ttOrder').html('倒背');
+            //隐藏弹层
+            $(this).parent('.g-layer').hide();
+            //倒计时重新赋值
+            var countSec = $('.J-question.active li.active').find('span').length;
+            $('#countSec').html(countSec);
+            //倒计时调用
+            memory.ShowCountSec(countSec);
+            //让确定按钮失效
+            $('#J-btnGet').attr('disabled', true);
+            //获得答题区格子个数
+            memory.getAswNum();
+
+        })
+
+    })
+    </script>
+</body>
+
+</html>

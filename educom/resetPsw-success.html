@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>重置密码</title>
+    <link rel="stylesheet" href="public/css/base.css">
+    <link rel="stylesheet" href="login/css/login.css" />
+</head>
+
+<body>
+    <div class="site-nav">
+        <div class="wrap">
+            <a href="index.html"><h1 class="logo">汇成教育</h1></a>
+            <div class="navMod">
+                <ul class="g-menu">
+                    <li class="cur"><a href="javascript:;">首页</a></<li></li>
+                    <li><a href="javascript:;">个人中心</a></li>
+                    <li><a href="javascript:;">测评</a></li>
+                    <li>
+                        <div class="menuTool">
+                            <a href="javascript:;">职业规划</a>
+                            <div class="toggleCnt">
+                                <ul>
+                                    <li><a href="javascript:;">未来职业</a></li>
+                                    <li><a href="javascript:;">名师指导</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="g-mainSearch">
+                    <input type="text" placeholder="搜索你感兴趣的学校、专业">
+                </div>
+                <div class="g-topLink">
+                    <a class="login" href="javascript:;">登录</a>
+                    <i>|</i>
+                    <a class="regist" href="javascript:;">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="g-resetPsw">
+            <div class="wrap">
+                <h2>重置登录密码</h2>
+                <div class="g-resetBox">
+                    <div class="resetHd">
+                        <ul>
+                            <li class="step active"><em>1</em>
+                                <p>验证身份</p>
+                            </li>
+                            <li class="line through"></li>
+                            <li class="step active"><em>2</em>
+                                <p>重置密码</p>
+                            </li>
+                            <li class="line through"></li>
+                            <li class="step active"><em>3</em>
+                                <p>重置成功</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="u-txtSucc">
+                        重置成功！请牢记新的登录密码！
+                    </div>
+                    <div class="u-countLogin"><em id="J-resSec">5</em>秒后自动登录！</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <div class="ftMsg">
+                <p class="cntMsg">
+                    <span><i class="i-telFt"></i>客服电话：010-888-8888&nbsp;&nbsp;400-888-8888</span>
+                    <span class="adress">公司地址：北京市海淀区交大东路616号1-808室</span>
+                </p>
+                <p class="copyright">
+                    Copyright（C）2009 ouhuiJY.com | All rights reserved 京ICP备88866688号 版权所有：北京汇成教育股份有限公司
+                </p>
+            </div>
+            <div class="contact">
+                <div class="m-qq mod" href="javascript:;">
+                    <i class="i-qq"></i>
+                    <div class="qqMsg ctBlock">
+                        <h4>官方QQ群</h4>
+                        <p>群5：475953451</p>
+                        <p>群6：143032683（浙江）</p>
+                    </div>
+                </div>
+                <div class="m-wx mod" href="javascript:;">
+                    <i class="i-wx"></i>
+                    <div class="wxMsg ctBlock">
+                        <h4>微信客服</h4>
+                        <p>请扫描二维码</p>
+                        <img src="public/images/img-wx.png" alt="">
+                    </div>
+                </div>
+                <div class="m-wb mod" href="javascript:;">
+                    <i class="i-wb"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="public/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="login/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="login/js/jquery.metadata.js"></script>
+    <script type="text/javascript" src="login/js/resgin.js"></script>
+    <script src="login/js/login.js"></script>
+    <script>
+        $(function(){
+            var o = $('#J-resSec');
+            countSec(o, 5,'index.html')
+        })
+    </script>
+</body>
+
+</html>

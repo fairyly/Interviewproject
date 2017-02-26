@@ -1,0 +1,25 @@
+@charset "utf-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, th, td, pre, blockquote, fieldset, lengend, input, button, textarea, form{margin: 0; padding: 0;}
+body, input, button, textarea, select{font-size:12px; font-family:"Microsoft YaHei", Helvetica, Tahoma, Arial, sans-serif;}
+
+h1, h2, h3, em, i, th, caption, cite, code, address{font-style: normal; font-weight: normal;}
+ul, ol{list-style: none;}
+img, fieldset{border: 0 none;}
+input, textarea{outline: none;resize:none;}
+table{border-collapse: collapse; border-spacing: 0;}
+button, input, select, label{vertical-align:middle;}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #999;
+}
+a{color: #333; outline: none; text-decoration: none;}
+a:focus{outline: none;}
+a:active,a:hover,a:visited,a:link{text-decoration: none;} 
+.fl{float:left}.fr{float:right}.dn{display:none}
+.clearfix{_zoom:1; /*height:1%;*/}
+.clearfix:after{content:""; clear: both; display:block;}
+.mb20{margin-bottom:1.25rem}.mt20{margin-top:1.25rem}.mr20{margin-right:1.25rem}.ml20{margin-left:1.25rem}
+.pt20{padding-top:1.25rem}
+.bb{border-bottom:solid 1px #ccc}.bt{border-top:solid 1px #ccc}
+header, hgroup, nav, menu, main, section, article, summary, details, aside, figure, figcaption, footer{display: block;}
+.transition{transition:all 0.4s ease;-moz-transition:all 0.4s ease;-o-transition:all 0.4s ease;-ms-transition:all 0.4s ease;-webkit-transition:all 0.4s ease;}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">  -->
+ <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+<title>门户网站</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/zixun.css">
+    
+
+</head>
+
+<body>
+	<div id="mainbox">
+      <!--页在线咨询设计-->
+      <div id="zixunbox"><a href="http://wpa.qq.com/msgrd?v=3&uin=1503534781&site=qq&menu=yes"><img src="img/zixun.jpg"></a>
+       <img  style="CURSOR: pointer" onclick="javascript:window.open('http://b.qq.com/webc.htm?new=0&sid=1503534781&o=门户&q=7', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');"  border="0" SRC=http://wpa.qq.com/pa?p=1:1503534781:3 alt="123456"> 
+      </div>
+
+		<!--页头部分-->
+		<div id="topbox">
+			<!--logo部分-->
+			<div id="logo" style="position:relative">
+				<div class="logo1"><img src="img/logo.png" width="120px" height="60px"></div>
+				<div class="logofont"><span class="logospan">某某某科技公司</span></div>
+				<div style="position:absolute;top: 35px;right:10px"><img src="img/tel.jpg"></div>
+				<div id="setindex"style="position:absolute;top:-21px;right:1px">
+					<ul>
+						<li><a href=""  onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.baidu.com');">设为首页</a></li>
+						<li><a href="">|</a></li>
+						<li><a href="">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--导航菜单部分-->
+
+			<div id="mainmenu" style="position:relative;z-index:9;">
+				<div id="nav">
+				<ul>
+					<li onmouseover="show('nav1')" onmouseout="hidde('nav1')"><a href="index.html">首页</a></li>
+					<li onmouseover="show('nav1')" onmouseout="hidde('nav1')"><a href="aboutus.html">关于我们</a></li>
+					<li onmouseover="show('nav1')" onmouseout="hidde('nav1')"><a href="newslist.html">新闻资讯</a></li>
+					<li onmouseover="show('nav1')" onmouseout="hidde('nav1')"><a href="prolist.html">产品介绍</a></li>
+					<li><a href="fangan.html">解决方案</a></li>
+					<li><a href="center.html">体验中心</a></li>
+					<li><a href="case.html">成功案例</a></li>
+					<li><a href="join.html">加盟合作</a></li>
+					<li><a href="connect.html">联系我们</a></li>
+				</ul>
+				</div>
+				<div id="nav1" onmouseover="show('nav1')" onmouseout="hidde('nav1')"style="position:absolute;top:44px;left:173px;display:none">
+					<ul>
+						<li><a href="">公司新闻</a></li>
+						<li><a href="">行业新闻</a></li>
+						<li><a href="">全国新闻</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+         <!--banner 广告部分-->
+         <div id="bannerbox" style="position:relative;z-index:1">
+         	<div>
+         		<img src="img/banner1.jpg" width="1113" id="banner1">
+         	</div>
+         	<div id="spanbtn" style="position:absolute;right:5px;bottom:5px;">
+         		<span onmouseover="showbannerbyid(1)" onmouseout="btnMouseout()">1</span><span onmouseover="showbannerbyid(2)" onmouseout="btnMouseout()">2</span><span onmouseover="showbannerbyid(3)" onmouseout="btnMouseout()">3</span><span onmouseover="showbannerbyid(4)" onmouseout="btnMouseout()">4</span>
+         	</div>
+         </div>
+		<!--页中部分-->
+		<div id="middlebox">
+			<!--页中上部分-->
+		     <div id="midtop">
+		     	<div class="topleft">
+		     		<div class="toptitle"><div class="titlecontent"><span>新闻中心 News</span></div></div>
+		     		<div class="toplist">
+		     			<div style="text-align:center;"><img src="img/news1.jpg"></div>
+		     			<ul>
+		     				<li>新闻</li>
+		     				<li>新闻</li>
+		     				<li>新闻</li>
+		     				<li>新闻</li>
+		     				<li>新闻</li>
+		     				<li>新闻</li>
+		     			</ul>
+		     		</div>
+		     	</div><div class="topleft">
+		     		<div class="toptitle"><div class="titlecontent"><span><img src="">公司简介 Company</span></div></div>
+		     		<div style="text-align:center;"><img src="img/news2.jpg"></div>
+		     		<div><p style="padding: 5px;
+						font-size:14px;
+						font-family: '微软雅黑';
+						line-height:25px;">某某科技公司是什么某某科技公司某某科技公司某某科技公司某某科技公司某某科技公司某某科技公司某某科技公司某某科某科技公司</p></div>
+		     	</div><div class="topleft">
+		     		<div class="toptitle"><div class="titlecontent"><span><img src="">联系我们 Conact</span></div></div>
+		     		<div style="text-align:center;border-bottom:1px solid lightgray"><img src="img/new3.jpg"></div>
+		     		<div class="news3">
+		     			<ul>
+		     				<li>公司名称：某某科技有限公司</li>
+		     				<li>公司地址：某某科技有限公司</li>
+		     				<li>公司电话：某某科技有限公司</li>
+		     				<li>公司传真：某某科技有限公司</li>
+		     				<li>公司网址：某某科技有限公司</li>
+		     			</ul>
+		     		</div>
+		     	</div>
+		     </div>
+		     <!--页中底部分-->
+		     <div id="midbottom">
+		     	<div id="midbotleft" class="topleft">
+		     		<div class="toptitle"><div class="titlecontent"><span>视频中心 Video</span></div></div>
+		     		<div>
+		     			<embed src="http://player.youku.com/player.php/sid/XMjkxMDgzMjk2/v.swf" allowFullScreen="true" quality="high" width="360" height="260" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+		     		</div>
+		     	</div>
+
+		     	<div id="midbotright" class="topleft"style="width:725px;">
+		     		<div class="toptitle">
+		     			<div class="titlecontent"><span>产品展示 Product</span></div>
+		     		</div>
+                    <!--可以用marquee实现滚动-->
+                     
+		     		<div id="demo">
+		     			<div id="indemo">
+			     			<div id="demo1">
+			     			<!--可以加产品名称  	<div style="float:left">
+			     					<div>
+			     					<a href=""><img src="img/gundong.jpg"width="148"height="156"></a></div> 
+			     					<div style="text-align:center"><span>某某产品</span></div>
+
+			     			    </div>  
+			     			    <div style="float:left">
+			     					<div>
+			     					<a href=""><img src="img/gundong.jpg"width="148"height="156"></a></div> 
+			     					<div style="text-align:center"><span>某某产品</span></div>
+
+			     			    </div> 
+			     			    <div style="float:left">
+			     					<div>
+			     					<a href=""><img src="img/gundong.jpg"width="148"height="156"></a></div> 
+			     					<div style="text-align:center"><span>某某产品</span></div>
+
+			     			    </div> 
+			     			    <div style="float:left">
+			     					<div>
+			     					<a href=""><img src="img/gundong.jpg"width="148"height="156"></a></div> 
+			     					<div style="text-align:center"><span>某某产品</span></div>
+
+			     			    </div>  -->
+			     				<a href=""><img src="img/gundong.jpg"width="148"height="156"></a>
+			     				<a href=""><img src="img/gundong.jpg"width="148"height="156"></a>
+			     				<a href=""><img src="img/gundong.jpg"width="148"height="156"></a>
+			     				<a href=""><img src="img/gundong.jpg"width="148"height="156"></a>
+			     				<a href=""><img src="img/gundong.jpg"width="148"height="156"></a>  
+
+			     			</div>
+
+			     			<div id="demo2">
+			     				
+			     			</div>
+						</div>	
+		     		</div> 
+		     		<script type="text/javascript">
+		     	
+		     		</script>
+		     		</div>
+
+		     	</div>
+		     </div>
+		</div>
+
+		<!--页底部分-->
+		<div id="bottombox">
+			<div id="footer">
+				<div>某某公司| 网址：www.moumou.com | 地址：大厦28层2807号|邮箱：123@123.com</div>
+				<div> Copyright © 2003 - 2016 JJOOn.CN All Rights Reserved</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/marquee.js"></script>
+	<script type="text/javascript" src="js/dropmenu.js"></script>
+	<script type="text/javascript" src="js/banner.js"></script>
+	<script type="text/javascript" src="js/zixunfloat.js"></script>
+</body>
+</html>

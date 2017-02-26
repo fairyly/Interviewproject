@@ -1,0 +1,20 @@
+ #pdetailtitle h1{
+        text-align: center;
+        color: red;
+        font-size: 14px;
+        font-weight: bold;
+        border-bottom: 1px dotted lightgray;
+        line-height: 30px;
+        height: 30px;
+    }
+    #pdetailtitle h5{margin-left: 180px;
+        text-align: center;
+        color: #fff;
+        background-color: blue;
+        line-height: 20px;
+        height: 20px;
+        width: 460px;
+    }
+    #prodpic{
+        text-align: center;
+    }
