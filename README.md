@@ -12,9 +12,9 @@ Interviewproject
 - [x] [5.JS 运行机制](https://github.com/fairyly/Interviewproject/blob/master/3.1.1%20JS%20%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6.md)
 - [x] [6.类型转换](https://github.com/fairyly/Interviewproject/blob/master/3.1.2%20%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2.md)
 - [x] [7.原型链](https://github.com/fairyly/Interviewproject/blob/master/3.1.3%20%E5%8E%9F%E5%9E%8B%E9%93%BE.md)
-- [] [8.JS 内存机制（堆栈池）](https://github.com/fairyly/Interviewproject/blob/master/3.1.4%20%20JS%20%E5%86%85%E5%AD%98%E6%9C%BA%E5%88%B6%EF%BC%88%E5%A0%86%E6%A0%88%E6%B1%A0%EF%BC%89.md)
-- [] [9.作用域链](https://github.com/fairyly/Interviewproject/blob/master/3.1.5%20%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE.md)
-- [] [10. this 在不同环境的指向](https://github.com/fairyly/Interviewproject/blob/master/3.1.6%20this%20%E5%9C%A8%E4%B8%8D%E5%90%8C%E7%8E%AF%E5%A2%83%E7%9A%84%E6%8C%87%E5%90%91.md)
+- [x] [8.JS 内存机制（堆栈池）](https://github.com/fairyly/Interviewproject/blob/master/3.1.4%20%20JS%20%E5%86%85%E5%AD%98%E6%9C%BA%E5%88%B6%EF%BC%88%E5%A0%86%E6%A0%88%E6%B1%A0%EF%BC%89.md)
+- [x] [9.作用域链](https://github.com/fairyly/Interviewproject/blob/master/3.1.5%20%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE.md)
+- [x] [10. this 在不同环境的指向](https://github.com/fairyly/Interviewproject/blob/master/3.1.6%20this%20%E5%9C%A8%E4%B8%8D%E5%90%8C%E7%8E%AF%E5%A2%83%E7%9A%84%E6%8C%87%E5%90%91.md)
 
 - [] [11.BFC-块格式化上下文.md](https://github.com/fairyly/Interviewproject/blob/master/3.1.7%20BFC-%E5%9D%97%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87.md)
 - [] [12.闭包](https://github.com/fairyly/Interviewproject/blob/master/3.1.8%20%E9%97%AD%E5%8C%85.md)
