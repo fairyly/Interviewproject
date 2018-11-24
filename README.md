@@ -28,7 +28,7 @@ Interviewproject
 - [x] [18.事件委托](https://github.com/fairyly/Interviewproject/blob/master/3.2.5%20%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98.md)
 - [x] [19.缓存机制](https://github.com/fairyly/Interviewproject/blob/master/3.2.6%20%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6.md)
 - [x] [20.JS 执行上下文](https://github.com/fairyly/Interviewproject/blob/master/3.2.7%20JS%20%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87.md)
-- [] [21.跨域和 HTTP协议](https://github.com/fairyly/Interviewproject/blob/master/3.2.8%20%E8%B7%A8%E5%9F%9F%E5%92%8C%20HTTP%E5%8D%8F%E8%AE%AE.md)
+- [x] [21.跨域和 HTTP协议](https://github.com/fairyly/Interviewproject/blob/master/3.2.8%20%E8%B7%A8%E5%9F%9F%E5%92%8C%20HTTP%E5%8D%8F%E8%AE%AE.md)
 - [x] [22.Promise](https://github.com/fairyly/Interviewproject/blob/master/3.2.9%20Promise%20.md)
 - [x] [23.Async---Await原理](https://github.com/fairyly/Interviewproject/blob/master/3.3.1%20Async---Await%E5%8E%9F%E7%90%86.md)
 - [] [24.MVVM](https://github.com/fairyly/Interviewproject/blob/master/3.3.2%20MVVM.md)
@@ -42,5 +42,4 @@ Interviewproject
 
 - [x] [30.判断回文](https://github.com/fairyly/Interviewproject/blob/master/4.1.1%20%E5%88%A4%E6%96%AD%E5%9B%9E%E6%96%87.md)
 - [x] [31.斐波那契数列](https://github.com/fairyly/Interviewproject/blob/master/4.1.2%20%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97.md)
-- [x] [32.判断素数](https://github.com/fairyly/Interviewproject/blob/master/4.1.3%20%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0.md)
-
+- [x] [
