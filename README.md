@@ -18,9 +18,9 @@ Interviewproject
 - [x] [9.作用域链](https://github.com/fairyly/Interviewproject/blob/master/3.1.5%20%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE.md)
 - [x] [10. this 在不同环境的指向](https://github.com/fairyly/Interviewproject/blob/master/3.1.6%20this%20%E5%9C%A8%E4%B8%8D%E5%90%8C%E7%8E%AF%E5%A2%83%E7%9A%84%E6%8C%87%E5%90%91.md)
 
-- [] [11.BFC-块格式化上下文.md](https://github.com/fairyly/Interviewproject/blob/master/3.1.7%20BFC-%E5%9D%97%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87.md)
+- [x] [11.BFC-块级格式化上下文（css）.md](https://github.com/fairyly/Interviewproject/blob/master/3.1.7%20BFC-%E5%9D%97%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87.md)
 - [] [12.闭包](https://github.com/fairyly/Interviewproject/blob/master/3.1.8%20%E9%97%AD%E5%8C%85.md)
-- [] [13. JS 函数柯里化](https://github.com/fairyly/Interviewproject/blob/master/3.1.9%20JS%20%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96.md)
+- [x] [13. JS 函数柯里化](https://github.com/fairyly/Interviewproject/blob/master/3.1.9%20JS%20%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96.md)
 - [x] [14.JS 事件流](https://github.com/fairyly/Interviewproject/blob/master/3.2.1%20JS%20%E4%BA%8B%E4%BB%B6%E6%B5%81.md)
 - [x] [15.浅拷贝和深拷贝](https://github.com/fairyly/Interviewproject/blob/master/3.2.2%20%E6%B5%85%E6%8B%B7%E8%B4%9D%E5%92%8C%E6%B7%B1%E6%8B%B7%E8%B4%9D.md)
 - [] [16.高阶函数和偏函数](https://github.com/fairyly/Interviewproject/blob/master/3.2.3%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%E5%81%8F%E5%87%BD%E6%95%B0.md)
