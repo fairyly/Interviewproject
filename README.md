@@ -23,7 +23,7 @@ Interviewproject
 - [x] [13. JS 函数柯里化](https://github.com/fairyly/Interviewproject/blob/master/3.1.9%20JS%20%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96.md)
 - [x] [14.JS 事件流](https://github.com/fairyly/Interviewproject/blob/master/3.2.1%20JS%20%E4%BA%8B%E4%BB%B6%E6%B5%81.md)
 - [x] [15.浅拷贝和深拷贝](https://github.com/fairyly/Interviewproject/blob/master/3.2.2%20%E6%B5%85%E6%8B%B7%E8%B4%9D%E5%92%8C%E6%B7%B1%E6%8B%B7%E8%B4%9D.md)
-- [] [16.高阶函数和偏函数](https://github.com/fairyly/Interviewproject/blob/master/3.2.3%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%E5%81%8F%E5%87%BD%E6%95%B0.md)
+- [x] [16.高阶函数和偏函数](https://github.com/fairyly/Interviewproject/blob/master/3.2.3%20%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%E5%81%8F%E5%87%BD%E6%95%B0.md)
 - [x] [17.防抖和节流](https://github.com/fairyly/Interviewproject/blob/master/3.2.4%20%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81.md)
 - [x] [18.事件委托](https://github.com/fairyly/Interviewproject/blob/master/3.2.5%20%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98.md)
 - [x] [19.缓存机制](https://github.com/fairyly/Interviewproject/blob/master/3.2.6%20%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6.md)
