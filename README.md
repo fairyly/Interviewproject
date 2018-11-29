@@ -37,9 +37,10 @@ Interviewproject
 - [] [27.前端路由](https://github.com/fairyly/Interviewproject/blob/master/3.3.5%20%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1.md)
 - [] [28.Event Bus 实现](https://github.com/fairyly/Interviewproject/blob/master/3.3.6%20Event%20Bus%20%E5%AE%9E%E7%8E%B0.md)
 - [] [29.基于Proxy和Reflect实现双向数据绑定](https://github.com/fairyly/Interviewproject/blob/master/3.3.7%20%E5%9F%BA%E4%BA%8EProxy%E5%92%8CReflect%E5%AE%9E%E7%8E%B0%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A.md)
+- [x] [尾调用优化](https://github.com/fairyly/Interviewproject/blob/master/3.3.8%20%E5%B0%BE%E8%B0%83%E7%94%A8%E4%BC%98%E5%8C%96.md)
 - [x] [js 继承](https://github.com/fairyly/Interviewproject/blob/master/3.3.9%20js%20%E7%BB%A7%E6%89%BF.md)
 - [x] [js new 操作符](https://github.com/fairyly/Interviewproject/blob/master/3.4.1%20js%20new%E6%93%8D%E4%BD%9C%E7%AC%A6.md)
 
 - [x] [30.判断回文](https://github.com/fairyly/Interviewproject/blob/master/4.1.1%20%E5%88%A4%E6%96%AD%E5%9B%9E%E6%96%87.md)
 - [x] [31.斐波那契数列](https://github.com/fairyly/Interviewproject/blob/master/4.1.2%20%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97.md)
-- [x] []()
+- [x] [判断素数](https://github.com/fairyly/Interviewproject/blob/master/4.1.3%20%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0.md)
