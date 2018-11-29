@@ -40,7 +40,7 @@ Interviewproject
 - [x] [尾调用优化](https://github.com/fairyly/Interviewproject/blob/master/3.3.8%20%E5%B0%BE%E8%B0%83%E7%94%A8%E4%BC%98%E5%8C%96.md)
 - [x] [js 继承](https://github.com/fairyly/Interviewproject/blob/master/3.3.9%20js%20%E7%BB%A7%E6%89%BF.md)
 - [x] [js new 操作符](https://github.com/fairyly/Interviewproject/blob/master/3.4.1%20js%20new%E6%93%8D%E4%BD%9C%E7%AC%A6.md)
-- [] [](https://github.com/fairyly/Interviewproject/blob/master/3.4.2%20js%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md)
+- [] [JS 设计模式](https://github.com/fairyly/Interviewproject/blob/master/3.4.2%20js%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md)
 
 - [x] [30.判断回文](https://github.com/fairyly/Interviewproject/blob/master/4.1.1%20%E5%88%A4%E6%96%AD%E5%9B%9E%E6%96%87.md)
 - [x] [31.斐波那契数列](https://github.com/fairyly/Interviewproject/blob/master/4.1.2%20%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97.md)
