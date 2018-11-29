@@ -35,7 +35,7 @@ Interviewproject
 - [] [25.DOM-DIFF算法.md](https://github.com/fairyly/Interviewproject/blob/master/3.3.3%20DOM-DIFF%E7%AE%97%E6%B3%95.md)
 - [] [26.双向数据绑定原理](https://github.com/fairyly/Interviewproject/blob/master/3.3.4%20%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86.md)
 - [] [27.前端路由](https://github.com/fairyly/Interviewproject/blob/master/3.3.5%20%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1.md)
-- [] [28.Event Bus 实现](https://github.com/fairyly/Interviewproject/blob/master/3.3.6%20Event%20Bus%20%E5%AE%9E%E7%8E%B0.md)
+- [x] [28.Event Bus 实现](https://github.com/fairyly/Interviewproject/blob/master/3.3.6%20Event%20Bus%20%E5%AE%9E%E7%8E%B0.md)
 - [] [29.基于Proxy和Reflect实现双向数据绑定](https://github.com/fairyly/Interviewproject/blob/master/3.3.7%20%E5%9F%BA%E4%BA%8EProxy%E5%92%8CReflect%E5%AE%9E%E7%8E%B0%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A.md)
 - [x] [尾调用优化](https://github.com/fairyly/Interviewproject/blob/master/3.3.8%20%E5%B0%BE%E8%B0%83%E7%94%A8%E4%BC%98%E5%8C%96.md)
 - [x] [js 继承](https://github.com/fairyly/Interviewproject/blob/master/3.3.9%20js%20%E7%BB%A7%E6%89%BF.md)
