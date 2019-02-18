@@ -1,0 +1,22 @@
+{
+  "name": "interviewproject",
+  "version": "1.0.0",
+  "description": "interview",
+  "main": "index.js",
+  "scripts": {
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fairyly/Interviewproject.git"
+  },
+  "keywords": [
+    "interview"
+  ],
+  "author": "fairyilys@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fairyly/Interviewproject/issues"
+  },
+  "homepage": "https://github.com/fairyly/Interviewproject#readme"
+}
